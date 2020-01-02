@@ -9,8 +9,10 @@ module AVM_AVALONMASTER_MAGNITUDE #
   // user ports begin
 
   // these are just some example ports. you can change them all
-  input wire START,
+  input wire Go,
   output wire DONE,
+  input wire[18:0] Size,
+  input wire[10:0] Number,
 
   // user ports end
   // dont change these ports
@@ -24,6 +26,15 @@ module AVM_AVALONMASTER_MAGNITUDE #
   output wire [AVM_AVALONMASTER_DATA_WIDTH - 1:0] AVM_AVALONMASTER_WRITEDATA
 );
 
+  //parameters
+  localparam Wait_For_Go = 0;
+  localparam  Read_Left_Register = 1;
+  localparam  Read_Right_Register = 2;
+  localparam  Do_Sum = 3;
+  localparam  Send_32MSB = 4;
+  localparam  Send_32LSB = 5;
+  localparam  Done_State = 6;
+
   // output wires and registers
   // you can change name and type of these ports
   reg done;
@@ -33,6 +44,15 @@ module AVM_AVALONMASTER_MAGNITUDE #
   reg write;
   reg [AVM_AVALONMASTER_DATA_WIDTH - 1:0] writedata;
 
+  //My registers
+  reg[2:0] Now_State;
+  reg Wait_Request;
+  reg[AVM_AVALONMASTER_DATA_WIDTH - 1:0] Left_Reg_Data;
+  reg[AVM_AVALONMASTER_DATA_WIDTH - 1:0] Right_Reg_Data;
+  reg[AVM_AVALONMASTER_DATA_WIDTH - 1:0] Read_Data;
+  reg[2 * AVM_AVALONMASTER_DATA_WIDTH - 1:0] Sum_Reg;
+  reg[10:0] Number_Count;
+  reg[18:0] Size_Count;
   // I/O assignment
   // never directly send values to output
   assign DONE = done;
@@ -40,6 +60,10 @@ module AVM_AVALONMASTER_MAGNITUDE #
   assign AVM_AVALONMASTER_READ = read;
   assign AVM_AVALONMASTER_WRITE = write;
   assign AVM_AVALONMASTER_WRITEDATA = writedata;
+
+  //My Assigns
+  assign AVM_AVALONMASTER_WAITREQUEST = Wait_Request;
+  assign AVM_AVALONMASTER_READDATA = Read_Data;
 
   /****************************************************************************
   * all main function must be here or in main module. you MUST NOT use control
@@ -53,10 +77,101 @@ module AVM_AVALONMASTER_MAGNITUDE #
     if(CSI_CLOCK_RESET == 0)
     begin
       done <= 0;
+      Sum_Reg <= 0;
+      read <= 0;
+      address <= 0;
+      Left_Reg_Data <= 0;
+      Right_Reg_Data <= 0;
     end
     else
     begin
-      done <= START;
+      case(Now_State)
+        Wait_For_Go:begin
+            if(Wait_Request) begin
+                Now_State <= Wait_For_Go;
+            end
+            else begin
+                if(Go) begin
+                    Now_State <= Read_Left_Register;
+                    read <= 1'b1;
+                    address <= ;
+                end
+            end
+        end
+
+        Read_Left_Register:begin
+            if(Wait_Request) begin
+                Now_State <= Read_Left_Register;
+            end
+            else begin
+                done <= 1'b0;
+                Now_State <= Read_Right_Register;
+                Left_Reg_Data <= Read_Data;
+                read <= 1'b1;
+                address <= ;
+            end
+        end
+
+        Read_Right_Register:begin
+            if(Wait_Request) begin
+                Now_State <= Read_Right_Register;
+            end
+            else begin
+                Now_State <= Do_Sum;
+                Right_Reg_Data <= Read_Data;
+            end
+        end
+
+        Do_Sum:begin
+            if(Wait_Request) begin
+                Now_State <= Do_Sum;
+            end
+            else if(Size_Count <= Size) begin
+                Size_Count <= Size_Count +1;
+                Sum_Reg <= Left_Reg_Data + Right_Reg_Data + Sum_Reg;
+                read <= 1'b1;
+                address <= ;
+                Now_State <= Read_Left_Register;
+            end
+            else begin
+                Now_State <= Send_32MSB;
+                write <= 1'b1;
+                address <= ;
+                writedata <= Sum_Reg[2 * AVM_AVALONMASTER_DATA_WIDTH:AVM_AVALONMASTER_DATA_WIDTH:AVM_AVALONMASTER_DATA_WIDTH];
+            end
+        end
+
+        Send_32MSB:begin
+            if(Wait_Request) begin
+                Now_State <= Send_32MSB;
+            end
+            else begin
+                Now_State <= Send_32LSB;
+                write <= 1'b1;
+                address <= ;
+                writedata <= Sum_Reg[AVM_AVALONMASTER_DATA_WIDTH:AVM_AVALONMASTER_DATA_WIDTH - 1:AVM_AVALONMASTER_DATA_WIDTH];
+            end
+        end
+
+        Send_32LSB:begin
+            if(Wait_Request) begin
+                Now_State <= Send_32LSB;
+            end
+            else if(Number_Count <= Number) begin
+                Now_State <= Read_Left_Register;
+                read <= 1'b1;
+                address <= ;
+            end
+            else begin
+                Now_State <= Done_State;
+            end
+        end
+
+        Done_State:begin
+            done <= 1'b1;
+            Now_State <= Wait_For_Go;
+        end
+
     end
   end
 

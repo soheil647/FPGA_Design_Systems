@@ -9,8 +9,8 @@ module AVS_AVALONSLAVE_CTRL #
   // user ports begin
   output wire Go,
   input wire DONE,
-  output wire [10:0] Number_Out,
-  output wire [18:0] Size_Out,
+  output wire [10:0] Number_Out;
+  output wire [18:0] Size_Out;
 
   // user ports end
   // dont change these ports
@@ -79,21 +79,21 @@ module AVS_AVALONSLAVE_CTRL #
       end
     endcase
     end
-    else if(AVS_AVALONSLAVE_READ)
-    begin
-      // address is always bytewise so must devide it by 4 for 32bit word
-      case(AVS_AVALONSLAVE_ADDRESS >> 2)
-      0: read_data <= slv_reg0;
-      1: read_data <= slv_reg1;
-      2: read_data <= slv_reg2;
-      3: read_data <= slv_reg3;
-      default:
+      else if(AVS_AVALONSLAVE_READ)
       begin
-        slv_reg0 <= slv_reg0;
-        slv_reg1 <= slv_reg1;
-        slv_reg2 <= slv_reg2;
-        slv_reg3 <= slv_reg3;
-      end
+        // address is always bytewise so must devide it by 4 for 32bit word
+        case(AVS_AVALONSLAVE_ADDRESS >> 2)
+        0: read_data <= slv_reg0;
+        1: read_data <= slv_reg1;
+        2: read_data <= slv_reg2;
+        3: read_data <= slv_reg3;
+        default:
+        begin
+          slv_reg0 <= slv_reg0;
+          slv_reg1 <= slv_reg1;
+          slv_reg2 <= slv_reg2;
+          slv_reg3 <= slv_reg3;
+        end
       endcase
     end
     // it is an example design
