@@ -11,6 +11,9 @@ module AVS_AVALONSLAVE_CTRL #
   input wire DONE,
   output wire [10:0] Number_Out,
   output wire [18:0] Size_Out,
+  output wire [AVS_AVALONSLAVE_DATA_WIDTH - 1:0] slv_reg1_out,
+  output wire [AVS_AVALONSLAVE_DATA_WIDTH - 1:0] slv_reg2_out,
+  output wire [AVS_AVALONSLAVE_DATA_WIDTH - 1:0] slv_reg3_out,
 
   // user ports end
   // dont change these ports
@@ -28,7 +31,7 @@ module AVS_AVALONSLAVE_CTRL #
   // you can change name and type of these ports
   wire start;
 
-  reg wait_request;
+  wire wait_request;
   reg [AVS_AVALONSLAVE_DATA_WIDTH - 1:0] read_data;
   // these are slave registers. they MUST be here!
   reg [AVS_AVALONSLAVE_DATA_WIDTH - 1:0] slv_reg0;
@@ -42,7 +45,6 @@ module AVS_AVALONSLAVE_CTRL #
 
   // I/O assignment
   // never directly send values to output
-  assign Go = Go;
 
   assign AVS_AVALONSLAVE_WAITREQUEST = wait_request;
   assign AVS_AVALONSLAVE_READDATA = read_data;
@@ -50,6 +52,10 @@ module AVS_AVALONSLAVE_CTRL #
   //My Assigns
   assign Number_Out = Number;
   assign Size_Out = Size;
+  assign slv_reg1_out = slv_reg1;
+  assign slv_reg2_out = slv_reg2;
+  assign slv_reg3_out = slv_reg3;
+  assign wait_request = 0;
 
   // it is an example and you can change it or delete it completely
   always @(posedge CSI_CLOCK_CLK)

@@ -13,6 +13,9 @@ module AVM_AVALONMASTER_MAGNITUDE #
   output wire DONE,
   input wire[18:0] Size,
   input wire[10:0] Number,
+  input wire [AVM_AVALONMASTER_DATA_WIDTH - 1:0] slv_reg1,
+  input wire [AVM_AVALONMASTER_DATA_WIDTH - 1:0] slv_reg2,
+  input wire [AVM_AVALONMASTER_DATA_WIDTH - 1:0] slv_reg3,
 
   // user ports end
   // dont change these ports
@@ -27,7 +30,7 @@ module AVM_AVALONMASTER_MAGNITUDE #
 );
 
   //parameters
-  localparam Wait_For_Go = 0;
+  localparam  Wait_For_Go = 0;
   localparam  Read_Left_Register = 1;
   localparam  Read_Right_Register = 2;
   localparam  Do_Sum = 3;
@@ -76,12 +79,16 @@ module AVM_AVALONMASTER_MAGNITUDE #
   begin
     if(CSI_CLOCK_RESET == 0)
     begin
-      done <= 0;
+      done <= 1'b0;
       Sum_Reg <= 0;
-      read <= 0;
+      read <= 1'b0;
+      write <= 1'b0;
       address <= 0;
       Left_Reg_Data <= 0;
       Right_Reg_Data <= 0;
+      Number_Count <= 11'b0;
+      Size_Count <= 19'b0;
+      Now_State <= Wait_For_Go;
     end
     else
     begin
@@ -93,8 +100,10 @@ module AVM_AVALONMASTER_MAGNITUDE #
             else begin
                 if(Go) begin
                     Now_State <= Read_Left_Register;
+                    done <= 1'b0;
                     read <= 1'b1;
-                    address <= ;
+                    write <= 1'b0;
+                    address <= slv_reg2 + Size_Count << 2;
                 end
             end
         end
@@ -104,11 +113,12 @@ module AVM_AVALONMASTER_MAGNITUDE #
                 Now_State <= Read_Left_Register;
             end
             else begin
-                done <= 1'b0;
                 Now_State <= Read_Right_Register;
                 Left_Reg_Data <= Read_Data;
                 read <= 1'b1;
-                address <= ;
+                write <= 1'b0;
+                done <= 1'b0;
+                address <= slv_reg1 + Size_Count << 2;
             end
         end
 
@@ -118,6 +128,10 @@ module AVM_AVALONMASTER_MAGNITUDE #
             end
             else begin
                 Now_State <= Do_Sum;
+                read <= 1'b0;
+                write <= 1'b0;
+                done <= 1'b0;
+                address <= 1'b0;
                 Right_Reg_Data <= Read_Data;
             end
         end
@@ -127,17 +141,22 @@ module AVM_AVALONMASTER_MAGNITUDE #
                 Now_State <= Do_Sum;
             end
             else if(Size_Count <= Size) begin
-                Size_Count <= Size_Count +1;
+                Size_Count <= Size_Count + 1;
                 Sum_Reg <= Left_Reg_Data + Right_Reg_Data + Sum_Reg;
                 read <= 1'b1;
-                address <= ;
+                write <= 1'b0;
+                done <= 1'b0;
+                address <= slv_reg2 + Size_Count << 2;
                 Now_State <= Read_Left_Register;
             end
             else begin
                 Now_State <= Send_32MSB;
+                Size_Count <= 0;
+                read <= 1'b0;
                 write <= 1'b1;
-                address <= ;
-                writedata <= Sum_Reg[2 * AVM_AVALONMASTER_DATA_WIDTH:AVM_AVALONMASTER_DATA_WIDTH:AVM_AVALONMASTER_DATA_WIDTH];
+                done <= 1'b0;
+                address <= slv_reg3 + Number_Count << 2;
+                writedata <= Sum_Reg[2 * AVM_AVALONMASTER_DATA_WIDTH:AVM_AVALONMASTER_DATA_WIDTH];
             end
         end
 
@@ -147,9 +166,11 @@ module AVM_AVALONMASTER_MAGNITUDE #
             end
             else begin
                 Now_State <= Send_32LSB;
+                read <= 1'b0;
                 write <= 1'b1;
-                address <= ;
-                writedata <= Sum_Reg[AVM_AVALONMASTER_DATA_WIDTH:AVM_AVALONMASTER_DATA_WIDTH - 1:AVM_AVALONMASTER_DATA_WIDTH];
+                done <= 1'b0;
+                address <= slv_reg3 + 4 + Number_Count << 2;
+                writedata <= Sum_Reg[AVM_AVALONMASTER_DATA_WIDTH - 1:0];
             end
         end
 
@@ -159,8 +180,11 @@ module AVM_AVALONMASTER_MAGNITUDE #
             end
             else if(Number_Count <= Number) begin
                 Now_State <= Read_Left_Register;
+                Number_Count <= Number_Count + 1;
+                write <= 1'b0;
                 read <= 1'b1;
-                address <= ;
+                done <= 1'b0;
+                address <= slv_reg2 + Size_Count << 2;
             end
             else begin
                 Now_State <= Done_State;
@@ -169,12 +193,15 @@ module AVM_AVALONMASTER_MAGNITUDE #
 
         Done_State:begin
             done <= 1'b1;
+            write <= 1'b0;
+            read <= 1'b0;
+            address <= 1'b0;
+            Number_Count <= 0;
             Now_State <= Wait_For_Go;
         end
-
+      endcase
     end
   end
-
   // user logic end
 
 endmodule

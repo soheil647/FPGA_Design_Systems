@@ -1,7 +1,7 @@
 /******************************************************************************
  * License Agreement                                                          *
  *                                                                            *
- * Copyright (c) 1991-2012 Altera Corporation, San Jose, California, USA.     *
+ * Copyright (c) 1991-2013 Altera Corporation, San Jose, California, USA.     *
  * All rights reserved.                                                       *
  *                                                                            *
  * Any megafunction design, and related net list (encrypted or decrypted),    *

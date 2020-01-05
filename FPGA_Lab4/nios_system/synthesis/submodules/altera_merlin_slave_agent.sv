@@ -24,10 +24,10 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/13.0/ip/merlin/altera_merlin_slave_agent/altera_merlin_slave_agent.sv#2 $
-// $Revision: #2 $
-// $Date: 2013/02/18 $
-// $Author: llim $
+// $Id: //acds/rel/13.0sp1/ip/merlin/altera_merlin_slave_agent/altera_merlin_slave_agent.sv#1 $
+// $Revision: #1 $
+// $Date: 2013/03/07 $
+// $Author: swbranch $
 
 `timescale 1 ns / 1 ns
 

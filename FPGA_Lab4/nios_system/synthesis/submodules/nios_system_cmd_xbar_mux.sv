@@ -11,9 +11,9 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/13.0/ip/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer.sv.terp#1 $
+// $Id: //acds/rel/13.0sp1/ip/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer.sv.terp#1 $
 // $Revision: #1 $
-// $Date: 2013/02/11 $
+// $Date: 2013/03/07 $
 // $Author: swbranch $
 
 // ------------------------------------------
@@ -32,7 +32,7 @@
 //   PIPELINE_ARB:        0
 //   PKT_TRANS_LOCK:      72 (arbitration locking enabled)
 //   ST_DATA_W:           109
-//   ST_CHANNEL_W:        29
+//   ST_CHANNEL_W:        30
 // ------------------------------------------
 
 module nios_system_cmd_xbar_mux
@@ -42,14 +42,14 @@ module nios_system_cmd_xbar_mux
     // ----------------------
     input                       sink0_valid,
     input [109-1   : 0]  sink0_data,
-    input [29-1: 0]  sink0_channel,
+    input [30-1: 0]  sink0_channel,
     input                       sink0_startofpacket,
     input                       sink0_endofpacket,
     output                      sink0_ready,
 
     input                       sink1_valid,
     input [109-1   : 0]  sink1_data,
-    input [29-1: 0]  sink1_channel,
+    input [30-1: 0]  sink1_channel,
     input                       sink1_startofpacket,
     input                       sink1_endofpacket,
     output                      sink1_ready,
@@ -60,7 +60,7 @@ module nios_system_cmd_xbar_mux
     // ----------------------
     output                      src_valid,
     output [109-1    : 0] src_data,
-    output [29-1 : 0] src_channel,
+    output [30-1 : 0] src_channel,
     output                      src_startofpacket,
     output                      src_endofpacket,
     input                       src_ready,
@@ -71,12 +71,12 @@ module nios_system_cmd_xbar_mux
     input clk,
     input reset
 );
-    localparam PAYLOAD_W        = 109 + 29 + 2;
+    localparam PAYLOAD_W        = 109 + 30 + 2;
     localparam NUM_INPUTS       = 2;
     localparam SHARE_COUNTER_W  = 1;
     localparam PIPELINE_ARB     = 0;
     localparam ST_DATA_W        = 109;
-    localparam ST_CHANNEL_W     = 29;
+    localparam ST_CHANNEL_W     = 30;
     localparam PKT_TRANS_LOCK   = 72;
 
     // ------------------------------------------

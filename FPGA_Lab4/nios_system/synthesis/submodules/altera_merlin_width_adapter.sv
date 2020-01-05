@@ -11,10 +11,10 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/13.0/ip/merlin/altera_merlin_width_adapter/altera_merlin_width_adapter.sv#1 $
-// $Revision: #1 $
-// $Date: 2013/02/11 $
-// $Author: swbranch $
+// $Id: //acds/rel/13.0sp1/ip/merlin/altera_merlin_width_adapter/altera_merlin_width_adapter.sv#2 $
+// $Revision: #2 $
+// $Date: 2013/05/15 $
+// $Author: llim $
 
 // -----------------------------------------------------
 // Merlin Width Adapter
@@ -427,13 +427,13 @@ endgenerate
          wire [31:0] int_byte_cnt_factor = (in_size_field < log2_out_numsymbols) ? log2_out_numsymbols : in_size_field;
          wire [BURST_SIZE_W-1:0] sized_byte_cnt_factor = int_byte_cnt_factor[BURST_SIZE_W-1:0];
          reg single_response_expected;
-         reg byteenable_lte_outsymbol;
-         reg [clogb2(IN_BYTEEN_W):0] count_be;
+         reg only_one_segment_asserted;
+         reg [RATIO-1:0] segments_with_be_asserted;
 
          reg [clogb2(RATIO)-1:0] count;
 
 
-         assign single_response_expected = (RESPONSE_PATH && byteenable_lte_outsymbol && in_startofpacket && in_endofpacket);      
+         assign single_response_expected = (RESPONSE_PATH && only_one_segment_asserted && in_startofpacket && in_endofpacket);      
 
          always @(posedge clk, posedge reset) begin
             if (reset) begin
@@ -575,13 +575,15 @@ endgenerate
                 out_data_field            = data_array[output_sel];
             end
             
-            // count each byteenable
-            count_be = 0;
-            for (i = 0; i < IN_BYTEEN_W; i=i+1) begin
-                count_be = count_be + in_byteen_field[i];
-            end
-            
-            byteenable_lte_outsymbol = (count_be <= OUT_BYTEEN_W);
+            //chcek each ration segments, whether it contains byttenable bits
+            segments_with_be_asserted = 0;
+            for (i = 0; i < RATIO; i=i+1) begin
+                segments_with_be_asserted[i] = |in_byteen_field[i*OUT_BYTEEN_W +: OUT_BYTEEN_W];
+            end    
+            //code to calculate whether only 1 segment is asserted.
+            //this code will detect a log 2 number, ie, only 1 bit of the lot is asserted.
+
+            only_one_segment_asserted = (segments_with_be_asserted && !(segments_with_be_asserted & (segments_with_be_asserted - 1))); 
 
             //-----------------------------------------
             // Optimization for non-bursting wide-narrow response.

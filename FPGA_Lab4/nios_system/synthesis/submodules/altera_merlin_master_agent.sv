@@ -11,10 +11,10 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/13.0/ip/merlin/altera_merlin_master_agent/altera_merlin_master_agent.sv#3 $
-// $Revision: #3 $
-// $Date: 2013/02/21 $
-// $Author: llim $
+// $Id: //acds/rel/13.0sp1/ip/merlin/altera_merlin_master_agent/altera_merlin_master_agent.sv#1 $
+// $Revision: #1 $
+// $Date: 2013/03/07 $
+// $Author: swbranch $
 
 // --------------------------------------
 // Merlin Master Agent

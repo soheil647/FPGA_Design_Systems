@@ -24,9 +24,9 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/13.0/ip/merlin/altera_merlin_router/altera_merlin_router.sv.terp#1 $
+// $Id: //acds/rel/13.0sp1/ip/merlin/altera_merlin_router/altera_merlin_router.sv.terp#1 $
 // $Revision: #1 $
-// $Date: 2013/02/11 $
+// $Date: 2013/03/07 $
 // $Author: swbranch $
 
 // -------------------------------------------------------
@@ -47,12 +47,12 @@ module nios_system_id_router_default_decode
      parameter DEFAULT_CHANNEL = 0,
                DEFAULT_WR_CHANNEL = -1,
                DEFAULT_RD_CHANNEL = -1,
-               DEFAULT_DESTID = 1 
+               DEFAULT_DESTID = 2 
    )
   (output [98 - 94 : 0] default_destination_id,
-   output [29-1 : 0] default_wr_channel,
-   output [29-1 : 0] default_rd_channel,
-   output [29-1 : 0] default_src_channel
+   output [30-1 : 0] default_wr_channel,
+   output [30-1 : 0] default_rd_channel,
+   output [30-1 : 0] default_src_channel
   );
 
   assign default_destination_id = 
@@ -63,7 +63,7 @@ module nios_system_id_router_default_decode
       assign default_src_channel = '0;
     end
     else begin
-      assign default_src_channel = 29'b1 << DEFAULT_CHANNEL;
+      assign default_src_channel = 30'b1 << DEFAULT_CHANNEL;
     end
   end
   endgenerate
@@ -74,8 +74,8 @@ module nios_system_id_router_default_decode
       assign default_rd_channel = '0;
     end
     else begin
-      assign default_wr_channel = 29'b1 << DEFAULT_WR_CHANNEL;
-      assign default_rd_channel = 29'b1 << DEFAULT_RD_CHANNEL;
+      assign default_wr_channel = 30'b1 << DEFAULT_WR_CHANNEL;
+      assign default_rd_channel = 30'b1 << DEFAULT_RD_CHANNEL;
     end
   end
   endgenerate
@@ -105,7 +105,7 @@ module nios_system_id_router
     // -------------------
     output                          src_valid,
     output reg [109-1    : 0] src_data,
-    output reg [29-1 : 0] src_channel,
+    output reg [30-1 : 0] src_channel,
     output                          src_startofpacket,
     output                          src_endofpacket,
     input                           src_ready
@@ -121,7 +121,7 @@ module nios_system_id_router
     localparam PKT_PROTECTION_H = 102;
     localparam PKT_PROTECTION_L = 100;
     localparam ST_DATA_W = 109;
-    localparam ST_CHANNEL_W = 29;
+    localparam ST_CHANNEL_W = 30;
     localparam DECODER_TYPE = 1;
 
     localparam PKT_TRANS_WRITE = 70;
@@ -161,7 +161,7 @@ module nios_system_id_router
     assign src_endofpacket   = sink_endofpacket;
 
     wire [PKT_DEST_ID_W-1:0] default_destid;
-    wire [29-1 : 0] default_src_channel;
+    wire [30-1 : 0] default_src_channel;
 
 
 
@@ -186,12 +186,12 @@ module nios_system_id_router
 
 
 
-        if (destid == 1 ) begin
-            src_channel = 29'b01;
+        if (destid == 2 ) begin
+            src_channel = 30'b01;
         end
 
-        if (destid == 0 ) begin
-            src_channel = 29'b10;
+        if (destid == 1 ) begin
+            src_channel = 30'b10;
         end
 
 

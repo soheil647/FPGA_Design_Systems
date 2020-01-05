@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="nios_system" kind="nios_system" version="1.0" fabric="QSYS">
- <!-- Format version 13.0 156 (Future versions may contain additional information.) -->
- <!-- 2013.06.17.16:30:13 -->
+ <!-- Format version 13.0sp1 232 (Future versions may contain additional information.) -->
+ <!-- 2020.01.05.16:05:27 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1371501013</value>
+  <value>1578227726</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -404,7 +404,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="JTAG_UART"
    kind="altera_avalon_jtag_uart"
-   version="13.0.1"
+   version="13.0.1.99.2"
    path="JTAG_UART">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -1084,7 +1084,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Interval_Timer"
    kind="altera_avalon_timer"
-   version="13.0.1"
+   version="13.0.1.99.2"
    path="Interval_Timer">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -1812,7 +1812,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="SDRAM"
    kind="altera_avalon_new_sdram_controller"
-   version="13.0.1"
+   version="13.0.1.99.2"
    path="SDRAM">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -2736,7 +2736,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Red_LEDs"
    kind="altera_up_avalon_parallel_port"
-   version="12.0"
+   version="13.0"
    path="Red_LEDs">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -3408,7 +3408,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Green_LEDs"
    kind="altera_up_avalon_parallel_port"
-   version="12.0"
+   version="13.0"
    path="Green_LEDs">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -4080,7 +4080,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="HEX3_HEX0"
    kind="altera_up_avalon_parallel_port"
-   version="12.0"
+   version="13.0"
    path="HEX3_HEX0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -4770,7 +4770,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="HEX7_HEX4"
    kind="altera_up_avalon_parallel_port"
-   version="12.0"
+   version="13.0"
    path="HEX7_HEX4">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -5460,7 +5460,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Slider_Switches"
    kind="altera_up_avalon_parallel_port"
-   version="12.0"
+   version="13.0"
    path="Slider_Switches">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -6132,7 +6132,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Pushbuttons"
    kind="altera_up_avalon_parallel_port"
-   version="12.0"
+   version="13.0"
    path="Pushbuttons">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -6865,7 +6865,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Expansion_JP1"
    kind="altera_up_avalon_parallel_port"
-   version="12.0"
+   version="13.0"
    path="Expansion_JP1">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -7598,7 +7598,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Expansion_JP2"
    kind="altera_up_avalon_parallel_port"
-   version="12.0"
+   version="13.0"
    path="Expansion_JP2">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -8331,7 +8331,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Serial_Port"
    kind="altera_up_avalon_rs232"
-   version="12.0"
+   version="13.0"
    path="Serial_Port">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -9006,7 +9006,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="AV_Config"
    kind="altera_up_avalon_audio_and_video_config"
-   version="12.0"
+   version="13.0"
    path="AV_Config">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -9700,7 +9700,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Audio"
    kind="altera_up_avalon_audio"
-   version="12.0"
+   version="13.0"
    path="Audio">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -10371,7 +10371,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Char_LCD_16x2"
    kind="altera_up_avalon_character_lcd"
-   version="12.0"
+   version="13.0"
    path="Char_LCD_16x2">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -10969,7 +10969,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="PS2_Port"
    kind="altera_up_avalon_ps2"
-   version="12.0"
+   version="13.0"
    path="PS2_Port">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -11615,7 +11615,7 @@ parameters are a RESULT of the module parameters. -->
    </port>
   </interface>
  </module>
- <module name="SRAM" kind="altera_up_avalon_sram" version="12.0" path="SRAM">
+ <module name="SRAM" kind="altera_up_avalon_sram" version="13.0" path="SRAM">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <parameter name="board">
@@ -12226,7 +12226,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="VGA_Pixel_Buffer"
    kind="altera_up_avalon_video_pixel_buffer_dma"
-   version="12.0"
+   version="13.0"
    path="VGA_Pixel_Buffer">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -13242,7 +13242,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="VGA_Char_Buffer"
    kind="altera_up_avalon_video_character_buffer_with_dma"
-   version="12.0"
+   version="13.0"
    path="VGA_Char_Buffer">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -14316,7 +14316,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="VGA_Controller"
    kind="altera_up_avalon_video_vga_controller"
-   version="12.0"
+   version="13.0"
    path="VGA_Controller">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -14722,7 +14722,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="VGA_Pixel_RGB_Resampler"
    kind="altera_up_avalon_video_rgb_resampler"
-   version="12.0"
+   version="13.0"
    path="VGA_Pixel_RGB_Resampler">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -15225,7 +15225,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="VGA_Pixel_Scaler"
    kind="altera_up_avalon_video_scaler"
-   version="12.0"
+   version="13.0"
    path="VGA_Pixel_Scaler">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -15736,7 +15736,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="VGA_Dual_Clock_FIFO"
    kind="altera_up_avalon_video_dual_clock_buffer"
-   version="12.0"
+   version="13.0"
    path="VGA_Dual_Clock_FIFO">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -16803,7 +16803,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Alpha_Blending"
    kind="altera_up_avalon_video_alpha_blender"
-   version="12.0"
+   version="13.0"
    path="Alpha_Blending">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -18427,7 +18427,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dataSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='SDRAM.s1' start='0x0' end='0x800000' /><slave name='SRAM.avalon_sram_slave' start='0x8000000' end='0x8080000' /><slave name='VGA_Char_Buffer.avalon_char_buffer_slave' start='0x9000000' end='0x9002000' /><slave name='CPU.jtag_debug_module' start='0xA000000' end='0xA000800' /><slave name='SD_Card.avalon_sdcard_slave' start='0xB000000' end='0xB000400' /><slave name='Flash.flash_erase_control' start='0xBFF0000' end='0xBFF0004' /><slave name='Flash.flash_data' start='0xC000000' end='0xC400000' /><slave name='Red_LEDs.avalon_parallel_port_slave' start='0x10000000' end='0x10000010' /><slave name='Green_LEDs.avalon_parallel_port_slave' start='0x10000010' end='0x10000020' /><slave name='HEX3_HEX0.avalon_parallel_port_slave' start='0x10000020' end='0x10000030' /><slave name='HEX7_HEX4.avalon_parallel_port_slave' start='0x10000030' end='0x10000040' /><slave name='Slider_Switches.avalon_parallel_port_slave' start='0x10000040' end='0x10000050' /><slave name='Pushbuttons.avalon_parallel_port_slave' start='0x10000050' end='0x10000060' /><slave name='Expansion_JP1.avalon_parallel_port_slave' start='0x10000060' end='0x10000070' /><slave name='Expansion_JP2.avalon_parallel_port_slave' start='0x10000070' end='0x10000080' /><slave name='PS2_Port.avalon_ps2_slave' start='0x10000100' end='0x10000108' /><slave name='USB.avalon_usb_slave' start='0x10000110' end='0x10000120' /><slave name='JTAG_UART.avalon_jtag_slave' start='0x10001000' end='0x10001008' /><slave name='Serial_Port.avalon_rs232_slave' start='0x10001010' end='0x10001018' /><slave name='IrDA_UART.avalon_irda_slave' start='0x10001020' end='0x10001028' /><slave name='Ethernet.avalon_ethernet_slave' start='0x10001400' end='0x10001408' /><slave name='Interval_Timer.s1' start='0x10002000' end='0x10002020' /><slave name='sysid.control_slave' start='0x10002020' end='0x10002028' /><slave name='AV_Config.avalon_av_config_slave' start='0x10003000' end='0x10003010' /><slave name='VGA_Pixel_Buffer.avalon_control_slave' start='0x10003020' end='0x10003030' /><slave name='VGA_Char_Buffer.avalon_char_control_slave' start='0x10003030' end='0x10003038' /><slave name='Audio.avalon_audio_slave' start='0x10003040' end='0x10003050' /><slave name='Char_LCD_16x2.avalon_lcd_slave' start='0x10003050' end='0x10003052' /><slave name='Video_In_DMA_Controller.avalon_dma_control_slave' start='0x10003060' end='0x10003070' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='SDRAM.s1' start='0x0' end='0x800000' /><slave name='SRAM.avalon_sram_slave' start='0x8000000' end='0x8080000' /><slave name='VGA_Char_Buffer.avalon_char_buffer_slave' start='0x9000000' end='0x9002000' /><slave name='CPU.jtag_debug_module' start='0xA000000' end='0xA000800' /><slave name='SD_Card.avalon_sdcard_slave' start='0xB000000' end='0xB000400' /><slave name='Flash.flash_erase_control' start='0xBFF0000' end='0xBFF0004' /><slave name='Flash.flash_data' start='0xC000000' end='0xC400000' /><slave name='Red_LEDs.avalon_parallel_port_slave' start='0x10000000' end='0x10000010' /><slave name='Green_LEDs.avalon_parallel_port_slave' start='0x10000010' end='0x10000020' /><slave name='HEX3_HEX0.avalon_parallel_port_slave' start='0x10000020' end='0x10000030' /><slave name='HEX7_HEX4.avalon_parallel_port_slave' start='0x10000030' end='0x10000040' /><slave name='Slider_Switches.avalon_parallel_port_slave' start='0x10000040' end='0x10000050' /><slave name='Pushbuttons.avalon_parallel_port_slave' start='0x10000050' end='0x10000060' /><slave name='Expansion_JP1.avalon_parallel_port_slave' start='0x10000060' end='0x10000070' /><slave name='Expansion_JP2.avalon_parallel_port_slave' start='0x10000070' end='0x10000080' /><slave name='PS2_Port.avalon_ps2_slave' start='0x10000100' end='0x10000108' /><slave name='USB.avalon_usb_slave' start='0x10000110' end='0x10000120' /><slave name='JTAG_UART.avalon_jtag_slave' start='0x10001000' end='0x10001008' /><slave name='Serial_Port.avalon_rs232_slave' start='0x10001010' end='0x10001018' /><slave name='IrDA_UART.avalon_irda_slave' start='0x10001020' end='0x10001028' /><slave name='Ethernet.avalon_ethernet_slave' start='0x10001400' end='0x10001408' /><slave name='Interval_Timer.s1' start='0x10002000' end='0x10002020' /><slave name='sysid.control_slave' start='0x10002020' end='0x10002028' /><slave name='AV_Config.avalon_av_config_slave' start='0x10003000' end='0x10003010' /><slave name='VGA_Pixel_Buffer.avalon_control_slave' start='0x10003020' end='0x10003030' /><slave name='VGA_Char_Buffer.avalon_char_control_slave' start='0x10003030' end='0x10003038' /><slave name='Audio.avalon_audio_slave' start='0x10003040' end='0x10003050' /><slave name='Char_LCD_16x2.avalon_lcd_slave' start='0x10003050' end='0x10003052' /><slave name='Video_In_DMA_Controller.avalon_dma_control_slave' start='0x10003060' end='0x10003070' /><slave name='Accelator_0.avalonslave' start='0x10004000' end='0x10004040' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -19204,6 +19204,14 @@ parameters are a RESULT of the module parameters. -->
     <name>USB.avalon_usb_slave</name>
     <baseAddress>268435728</baseAddress>
     <span>16</span>
+   </memoryBlock>
+   <memoryBlock>
+    <isBridge>false</isBridge>
+    <moduleName>Accelator_0</moduleName>
+    <slaveName>avalonslave</slaveName>
+    <name>Accelator_0.avalonslave</name>
+    <baseAddress>268451840</baseAddress>
+    <span>64</span>
    </memoryBlock>
   </interface>
   <interface name="instruction_master" kind="avalon_master" version="13.0">
@@ -20291,7 +20299,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1371501013</value>
+   <value>1578227726</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.id</name>
@@ -20299,7 +20307,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1371501013</value>
+   <value>1578227726</value>
   </assignment>
   <parameter name="id">
    <type>int</type>
@@ -20311,7 +20319,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1371501013</value>
+   <value>1578227726</value>
    <derived>false</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -21316,7 +21324,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="External_Clocks"
    kind="altera_up_clocks"
-   version="12.0"
+   version="13.0"
    path="External_Clocks">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -21802,6 +21810,12 @@ parameters are a RESULT of the module parameters. -->
     <slaveName>clock_reset</slaveName>
     <name>USB.clock_reset</name>
    </clockDomainMember>
+   <clockDomainMember>
+    <isBridge>false</isBridge>
+    <moduleName>Accelator_0</moduleName>
+    <slaveName>clock</slaveName>
+    <name>Accelator_0.clock</name>
+   </clockDomainMember>
   </interface>
   <interface name="sys_clk_reset" kind="reset_source" version="13.0">
    <!-- The connection points exposed by a module instance for the
@@ -22138,7 +22152,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="SD_Card"
    kind="Altera_UP_SD_Card_Avalon_Interface"
-   version="1.0"
+   version="13.0"
    path="SD_Card">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -22722,7 +22736,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Flash"
    kind="Altera_UP_Flash_Memory_IP_Core_Avalon_Interface"
-   version="1.0"
+   version="13.0"
    path="Flash">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -23695,7 +23709,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="IrDA_UART"
    kind="altera_up_avalon_irda"
-   version="12.0"
+   version="13.0"
    path="IrDA_UART">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -24370,7 +24384,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Video_In"
    kind="altera_up_avalon_video_decoder"
-   version="12.0"
+   version="13.0"
    path="Video_In">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -24757,7 +24771,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Video_In_Chroma_Resampler"
    kind="altera_up_avalon_video_chroma_resampler"
-   version="12.0"
+   version="13.0"
    path="Video_In_Chroma_Resampler">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -25252,7 +25266,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Video_In_CSC"
    kind="altera_up_avalon_video_csc"
-   version="12.0"
+   version="13.0"
    path="Video_In_CSC">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -25755,7 +25769,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Video_In_RBG_Resampler"
    kind="altera_up_avalon_video_rgb_resampler"
-   version="12.0"
+   version="13.0"
    path="Video_In_RBG_Resampler">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -26258,7 +26272,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Video_In_Clipper"
    kind="altera_up_avalon_video_clipper"
-   version="12.0"
+   version="13.0"
    path="Video_In_Clipper">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -26836,7 +26850,7 @@ parameters are a RESULT of the module parameters. -->
  <module
    name="Video_In_Scaler"
    kind="altera_up_avalon_video_scaler"
-   version="12.0"
+   version="13.0"
    path="Video_In_Scaler">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -29671,6 +29685,818 @@ parameters are a RESULT of the module parameters. -->
     <width>1</width>
     <role>export</role>
    </port>
+  </interface>
+ </module>
+ <module name="Accelator_0" kind="Accelator" version="1.0" path="Accelator_0">
+  <!-- Describes a single module. Module parameters are
+the requested settings for a module instance. -->
+  <parameter name="avs_avalonslave_data_width">
+   <type>int</type>
+   <value>32</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="avs_avalonslave_address_width">
+   <type>int</type>
+   <value>4</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="avm_avalonmaster_data_width">
+   <type>int</type>
+   <value>32</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="avm_avalonmaster_address_width">
+   <type>int</type>
+   <value>32</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <interface name="clock" kind="clock_sink" version="13.0">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="externallyDriven">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="ptfSchematicName">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>clock</type>
+   <isStart>false</isStart>
+   <port>
+    <name>csi_clock_clk</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>clk</role>
+   </port>
+  </interface>
+  <interface name="clock_reset" kind="reset_sink" version="13.0">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>clock</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="synchronousEdges">
+    <type>com.altera.sopcmodel.reset.Reset$Edges</type>
+    <value>DEASSERT</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>reset</type>
+   <isStart>false</isStart>
+   <port>
+    <name>csi_clock_reset</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>reset_n</role>
+   </port>
+  </interface>
+  <interface name="avalonslave" kind="avalon_slave" version="13.0">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <assignment>
+    <name>embeddedsw.configuration.isFlash</name>
+    <value>0</value>
+   </assignment>
+   <assignment>
+    <name>embeddedsw.configuration.isMemoryDevice</name>
+    <value>0</value>
+   </assignment>
+   <assignment>
+    <name>embeddedsw.configuration.isNonVolatileStorage</name>
+    <value>0</value>
+   </assignment>
+   <assignment>
+    <name>embeddedsw.configuration.isPrintableDevice</name>
+    <value>0</value>
+   </assignment>
+   <parameter name="addressAlignment">
+    <type>com.altera.sopcmodel.avalon.AvalonConnectionPoint$AddressAlignment</type>
+    <value>DYNAMIC</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="addressGroup">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="addressSpan">
+    <type>java.math.BigInteger</type>
+    <value>64</value>
+    <derived>true</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="addressUnits">
+    <type>com.altera.sopcmodel.avalon.EAddrBurstUnits</type>
+    <value>WORDS</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="alwaysBurstMaxBurst">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>clock</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value>clock_reset</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="bitsPerSymbol">
+    <type>int</type>
+    <value>8</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="bridgesToMaster">
+    <type>com.altera.entityinterfaces.IConnectionPoint</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="burstOnBurstBoundariesOnly">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="burstcountUnits">
+    <type>com.altera.sopcmodel.avalon.EAddrBurstUnits</type>
+    <value>WORDS</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="constantBurstBehavior">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="explicitAddressSpan">
+    <type>java.math.BigInteger</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="holdTime">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>false</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="interleaveBursts">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="isBigEndian">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="isFlash">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="isMemoryDevice">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="isNonVolatileStorage">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="linewrapBursts">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="maximumPendingReadTransactions">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>false</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="maximumPendingWriteTransactions">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>false</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="minimumUninterruptedRunLength">
+    <type>int</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="printableDevice">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="readLatency">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="readWaitStates">
+    <type>int</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="readWaitTime">
+    <type>int</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>false</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="registerIncomingSignals">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="registerOutgoingSignals">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="setupTime">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>false</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="timingUnits">
+    <type>com.altera.sopcmodel.avalon.TimingUnits</type>
+    <value>Cycles</value>
+    <derived>false</derived>
+    <enabled>false</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="transparentBridge">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="wellBehavedWaitrequest">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="writeLatency">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="writeWaitStates">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="writeWaitTime">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>false</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>avalon</type>
+   <isStart>false</isStart>
+   <port>
+    <name>avs_avalonslave_address</name>
+    <direction>Input</direction>
+    <width>4</width>
+    <role>address</role>
+   </port>
+   <port>
+    <name>avs_avalonslave_waitrequest</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>waitrequest</role>
+   </port>
+   <port>
+    <name>avs_avalonslave_read</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>read</role>
+   </port>
+   <port>
+    <name>avs_avalonslave_write</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>write</role>
+   </port>
+   <port>
+    <name>avs_avalonslave_readdata</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>readdata</role>
+   </port>
+   <port>
+    <name>avs_avalonslave_writedata</name>
+    <direction>Input</direction>
+    <width>32</width>
+    <role>writedata</role>
+   </port>
+  </interface>
+  <interface name="avalon_master_0" kind="avalon_master" version="13.0">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="adaptsTo">
+    <type>com.altera.entityinterfaces.IConnectionPoint</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="addressGroup">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="addressUnits">
+    <type>com.altera.sopcmodel.avalon.EAddrBurstUnits</type>
+    <value>SYMBOLS</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="alwaysBurstMaxBurst">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>clock</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value>clock_reset</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="bitsPerSymbol">
+    <type>int</type>
+    <value>8</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="burstOnBurstBoundariesOnly">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="burstcountUnits">
+    <type>com.altera.sopcmodel.avalon.EAddrBurstUnits</type>
+    <value>WORDS</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="constantBurstBehavior">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="dBSBigEndian">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="doStreamReads">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="doStreamWrites">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="holdTime">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="interleaveBursts">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="isAsynchronous">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="isBigEndian">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="isReadable">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="isWriteable">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="linewrapBursts">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="maxAddressWidth">
+    <type>int</type>
+    <value>32</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="maximumPendingReadTransactions">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="maximumPendingWriteTransactions">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="readLatency">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="readWaitTime">
+    <type>int</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="registerIncomingSignals">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="registerOutgoingSignals">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="setupTime">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="timingUnits">
+    <type>com.altera.sopcmodel.avalon.TimingUnits</type>
+    <value>Cycles</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="writeWaitTime">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>avalon</type>
+   <isStart>true</isStart>
+   <port>
+    <name>avm_avalonmaster_address</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>address</role>
+   </port>
+   <port>
+    <name>avm_avalonmaster_waitrequest</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>waitrequest</role>
+   </port>
+   <port>
+    <name>avm_avalonmaster_read</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>read</role>
+   </port>
+   <port>
+    <name>avm_avalonmaster_write</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>write</role>
+   </port>
+   <port>
+    <name>avm_avalonmaster_readdata</name>
+    <direction>Input</direction>
+    <width>32</width>
+    <role>readdata</role>
+   </port>
+   <port>
+    <name>avm_avalonmaster_writedata</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>writedata</role>
+   </port>
+   <memoryBlock>
+    <isBridge>false</isBridge>
+    <moduleName>SRAM</moduleName>
+    <slaveName>avalon_sram_slave</slaveName>
+    <name>SRAM.avalon_sram_slave</name>
+    <baseAddress>134217728</baseAddress>
+    <span>524288</span>
+   </memoryBlock>
   </interface>
  </module>
  <connection
@@ -36668,108 +37494,168 @@ parameters are a RESULT of the module parameters. -->
   <endModule>USB</endModule>
   <endConnectionPoint>interrupt</endConnectionPoint>
  </connection>
+ <connection
+   name="Accelator_0.avalon_master_0/SRAM.avalon_sram_slave"
+   kind="avalon"
+   version="13.0"
+   start="Accelator_0.avalon_master_0"
+   end="SRAM.avalon_sram_slave">
+  <parameter name="arbitrationPriority">
+   <type>int</type>
+   <value>1</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="baseAddress">
+   <type>java.math.BigInteger</type>
+   <value>0x08000000</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="defaultConnection">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <startModule>Accelator_0</startModule>
+  <startConnectionPoint>avalon_master_0</startConnectionPoint>
+  <endModule>SRAM</endModule>
+  <endConnectionPoint>avalon_sram_slave</endConnectionPoint>
+ </connection>
+ <connection
+   name="CPU.jtag_debug_module_reset/Accelator_0.clock_reset"
+   kind="reset"
+   version="13.0"
+   start="CPU.jtag_debug_module_reset"
+   end="Accelator_0.clock_reset">
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <startModule>CPU</startModule>
+  <startConnectionPoint>jtag_debug_module_reset</startConnectionPoint>
+  <endModule>Accelator_0</endModule>
+  <endConnectionPoint>clock_reset</endConnectionPoint>
+ </connection>
+ <connection
+   name="External_Clocks.sys_clk/Accelator_0.clock"
+   kind="clock"
+   version="13.0"
+   start="External_Clocks.sys_clk"
+   end="Accelator_0.clock">
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <startModule>External_Clocks</startModule>
+  <startConnectionPoint>sys_clk</startConnectionPoint>
+  <endModule>Accelator_0</endModule>
+  <endConnectionPoint>clock</endConnectionPoint>
+ </connection>
+ <connection
+   name="CPU.data_master/Accelator_0.avalonslave"
+   kind="avalon"
+   version="13.0"
+   start="CPU.data_master"
+   end="Accelator_0.avalonslave">
+  <parameter name="arbitrationPriority">
+   <type>int</type>
+   <value>1</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="baseAddress">
+   <type>java.math.BigInteger</type>
+   <value>0x10004000</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="defaultConnection">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <startModule>CPU</startModule>
+  <startConnectionPoint>data_master</startConnectionPoint>
+  <endModule>Accelator_0</endModule>
+  <endConnectionPoint>avalonslave</endConnectionPoint>
+ </connection>
  <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_video_pixel_buffer_dma</name>
+  <instanceCount>35</instanceCount>
+  <name>avalon</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Pixel Buffer DMA Controller</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_video_dma_controller</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>DMA Controller</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>2</instanceCount>
-  <name>clock_source</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Clock Output</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>3</instanceCount>
-  <name>reset_source</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Reset Output</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_avalon_jtag_uart</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>JTAG UART</displayName>
-  <version>13.0.1</version>
- </plugin>
- <plugin>
-  <instanceCount>2</instanceCount>
-  <name>reset_source</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Reset Output</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_video_alpha_blender</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Alpha Blender</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_clocks</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Clock Signals for DE-series Board Peripherals</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_sram</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>SRAM/SSRAM Controller</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_character_lcd</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>16x2 Character Display</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>4</instanceCount>
-  <name>avalon_master</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Avalon Memory Mapped Master</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>2</instanceCount>
-  <name>reset_sink</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Reset Input</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_ethernet</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Ethernet</displayName>
+  <subtype>com.altera.entityinterfaces.IConnection</subtype>
+  <displayName>Avalon Memory Mapped Connection</displayName>
   <version>13.0</version>
  </plugin>
  <plugin>
@@ -36778,38 +37664,14 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>RGB Resampler</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_video_vga_controller</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>VGA Controller</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>12</instanceCount>
-  <name>avalon_streaming_source</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Avalon Streaming Source</displayName>
   <version>13.0</version>
  </plugin>
  <plugin>
-  <instanceCount>11</instanceCount>
-  <name>interrupt_sender</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Interrupt Sender</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>12</instanceCount>
-  <name>avalon_streaming</name>
+  <instanceCount>126</instanceCount>
+  <name>reset</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IConnection</subtype>
-  <displayName>Avalon Streaming Connection</displayName>
+  <displayName>Reset Connection</displayName>
   <version>13.0</version>
  </plugin>
  <plugin>
@@ -36818,7 +37680,15 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>PS2 Controller</displayName>
-  <version>12.0</version>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_video_decoder</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Video-In Decoder</displayName>
+  <version>13.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -36830,11 +37700,27 @@ parameters are a RESULT of the module parameters. -->
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_irda</name>
+  <name>altera_nios2_qsys</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>IrDA UART</displayName>
-  <version>12.0</version>
+  <displayName>Nios II Processor</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_video_character_buffer_with_dma</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Character Buffer for VGA Display</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>2</instanceCount>
+  <name>reset_source</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Reset Output</displayName>
+  <version>13.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -36842,110 +37728,6 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>Altera UP Flash Memory IP Core</displayName>
-  <version>1.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>nios_custom_instruction_slave</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Custom Instruction Slave</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>2</instanceCount>
-  <name>altera_clock_bridge</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Clock Bridge</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>12</instanceCount>
-  <name>avalon_streaming_sink</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Avalon Streaming Sink</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>2</instanceCount>
-  <name>altera_up_avalon_video_scaler</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Scaler</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_avalon_timer</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Interval Timer</displayName>
-  <version>13.0.1</version>
- </plugin>
- <plugin>
-  <instanceCount>22</instanceCount>
-  <name>conduit_end</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Conduit</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>43</instanceCount>
-  <name>clock_sink</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Clock Input</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_usb</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>USB Controller</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_video_chroma_resampler</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Chroma Resampler</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>125</instanceCount>
-  <name>reset</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IConnection</subtype>
-  <displayName>Reset Connection</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>8</instanceCount>
-  <name>altera_up_avalon_parallel_port</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Parallel Port</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>nios_custom_instruction</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IConnection</subtype>
-  <displayName>Nios II Custom Instruction Connection</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>41</instanceCount>
-  <name>reset_sink</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Reset Input</displayName>
   <version>13.0</version>
  </plugin>
  <plugin>
@@ -36957,20 +37739,12 @@ parameters are a RESULT of the module parameters. -->
   <version>13.0</version>
  </plugin>
  <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_video_character_buffer_with_dma</name>
+  <instanceCount>2</instanceCount>
+  <name>clock_source</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Character Buffer for VGA Display</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_avalon_new_sdram_controller</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>SDRAM Controller</displayName>
-  <version>13.0.1</version>
+  <displayName>Clock Source</displayName>
+  <version>13.0</version>
  </plugin>
  <plugin>
   <instanceCount>2</instanceCount>
@@ -36982,59 +37756,19 @@ parameters are a RESULT of the module parameters. -->
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
-  <name>Altera_UP_SD_Card_Avalon_Interface</name>
+  <name>Accelator</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>SD Card Interface</displayName>
+  <displayName>Accelator</displayName>
   <version>1.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_audio</name>
+  <name>altera_up_avalon_character_lcd</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Audio</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_video_dual_clock_buffer</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Dual-Clock FIFO</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_video_clipper</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Clipper</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_nios2_qsys</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Nios II Processor</displayName>
+  <displayName>16x2 Character Display</displayName>
   <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>29</instanceCount>
-  <name>avalon_slave</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Avalon Memory Mapped Slave</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_video_decoder</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Video-In Decoder</displayName>
-  <version>12.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -37042,14 +37776,6 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Interrupt Receiver</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_avalon_sysid_qsys</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>System ID Peripheral</displayName>
   <version>13.0</version>
  </plugin>
  <plugin>
@@ -37062,46 +37788,6 @@ parameters are a RESULT of the module parameters. -->
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_rs232</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>RS232 UART</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>43</instanceCount>
-  <name>clock</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IConnection</subtype>
-  <displayName>Clock Connection</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>altera_up_avalon_audio_and_video_config</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Audio and Video Config</displayName>
-  <version>12.0</version>
- </plugin>
- <plugin>
-  <instanceCount>33</instanceCount>
-  <name>avalon</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IConnection</subtype>
-  <displayName>Avalon Memory Mapped Connection</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>2</instanceCount>
-  <name>clock_source</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Clock Source</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
   <name>altera_nios_custom_instr_floating_point</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
@@ -37110,11 +37796,171 @@ parameters are a RESULT of the module parameters. -->
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_audio</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Audio</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>nios_custom_instruction</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IConnection</subtype>
+  <displayName>Nios II Custom Instruction Connection</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_video_pixel_buffer_dma</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Pixel Buffer DMA Controller</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>2</instanceCount>
+  <name>clock_source</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Clock Output</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>12</instanceCount>
+  <name>avalon_streaming_source</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Avalon Streaming Source</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_rs232</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>RS232 UART</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_video_clipper</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Clipper</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>44</instanceCount>
+  <name>clock_sink</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Clock Input</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>2</instanceCount>
+  <name>altera_clock_bridge</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Clock Bridge</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>2</instanceCount>
+  <name>altera_up_avalon_video_scaler</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Scaler</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_video_dual_clock_buffer</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Dual-Clock FIFO</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_ethernet</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Ethernet</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_clocks</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Clock Signals for DE-series Board Peripherals</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>Altera_UP_SD_Card_Avalon_Interface</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>SD Card Interface</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_irda</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>IrDA UART</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>44</instanceCount>
+  <name>clock</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IConnection</subtype>
+  <displayName>Clock Connection</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_avalon_timer</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Interval Timer</displayName>
+  <version>13.0.1.99.2</version>
+ </plugin>
+ <plugin>
+  <instanceCount>3</instanceCount>
+  <name>reset_source</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Reset Output</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_avalon_new_sdram_controller</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>SDRAM Controller</displayName>
+  <version>13.0.1.99.2</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_video_alpha_blender</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Alpha Blender</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
   <name>altera_up_avalon_video_csc</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>Colour-Space Converter</displayName>
-  <version>12.0</version>
+  <version>13.0</version>
  </plugin>
  <plugin>
   <instanceCount>11</instanceCount>
@@ -37124,6 +37970,150 @@ parameters are a RESULT of the module parameters. -->
   <displayName>Interrupt Connection</displayName>
   <version>13.0</version>
  </plugin>
- <reportVersion>13.0 156</reportVersion>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_sram</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>SRAM/SSRAM Controller</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>30</instanceCount>
+  <name>avalon_slave</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Avalon Memory Mapped Slave</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_video_chroma_resampler</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Chroma Resampler</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_avalon_sysid_qsys</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>System ID Peripheral</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_video_vga_controller</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>VGA Controller</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>11</instanceCount>
+  <name>interrupt_sender</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Interrupt Sender</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>8</instanceCount>
+  <name>altera_up_avalon_parallel_port</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Parallel Port</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>42</instanceCount>
+  <name>reset_sink</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Reset Input</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_audio_and_video_config</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Audio and Video Config</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>2</instanceCount>
+  <name>reset_sink</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Reset Input</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>12</instanceCount>
+  <name>avalon_streaming_sink</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Avalon Streaming Sink</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>nios_custom_instruction_slave</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Custom Instruction Slave</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_avalon_jtag_uart</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>JTAG UART</displayName>
+  <version>13.0.1.99.2</version>
+ </plugin>
+ <plugin>
+  <instanceCount>22</instanceCount>
+  <name>conduit_end</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Conduit</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>12</instanceCount>
+  <name>avalon_streaming</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IConnection</subtype>
+  <displayName>Avalon Streaming Connection</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_usb</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>USB Controller</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_up_avalon_video_dma_controller</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>DMA Controller</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>5</instanceCount>
+  <name>avalon_master</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Avalon Memory Mapped Master</displayName>
+  <version>13.0</version>
+ </plugin>
+ <reportVersion>13.0sp1 232</reportVersion>
  <uniqueIdentifier></uniqueIdentifier>
 </EnsembleReport>
