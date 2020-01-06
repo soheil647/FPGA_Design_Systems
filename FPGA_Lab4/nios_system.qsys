@@ -665,19 +665,6 @@
          type = "long";
       }
    }
-   element HEX7_HEX4.avalon_parallel_port_slave
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "268435504";
-         type = "long";
-      }
-   }
    element Pushbuttons.avalon_parallel_port_slave
    {
       datum _lockedAddress
@@ -688,19 +675,6 @@
       datum baseAddress
       {
          value = "268435536";
-         type = "long";
-      }
-   }
-   element Expansion_JP2.avalon_parallel_port_slave
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "268435568";
          type = "long";
       }
    }
@@ -717,7 +691,7 @@
          type = "long";
       }
    }
-   element Slider_Switches.avalon_parallel_port_slave
+   element Green_LEDs.avalon_parallel_port_slave
    {
       datum _lockedAddress
       {
@@ -726,7 +700,7 @@
       }
       datum baseAddress
       {
-         value = "268435520";
+         value = "268435472";
          type = "long";
       }
    }
@@ -743,7 +717,7 @@
          type = "long";
       }
    }
-   element Green_LEDs.avalon_parallel_port_slave
+   element Expansion_JP2.avalon_parallel_port_slave
    {
       datum _lockedAddress
       {
@@ -752,7 +726,7 @@
       }
       datum baseAddress
       {
-         value = "268435472";
+         value = "268435568";
          type = "long";
       }
    }
@@ -766,6 +740,32 @@
       datum baseAddress
       {
          value = "268435456";
+         type = "long";
+      }
+   }
+   element Slider_Switches.avalon_parallel_port_slave
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268435520";
+         type = "long";
+      }
+   }
+   element HEX7_HEX4.avalon_parallel_port_slave
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268435504";
          type = "long";
       }
    }
@@ -999,6 +999,14 @@
          type = "boolean";
       }
    }
+   element External_Clocks.vga_clk
+   {
+      datum _clockDomain
+      {
+         value = "vga_clk";
+         type = "String";
+      }
+   }
    element vga_clk
    {
       datum _sortIndex
@@ -1010,14 +1018,6 @@
       {
          value = "0";
          type = "boolean";
-      }
-   }
-   element External_Clocks.vga_clk
-   {
-      datum _clockDomain
-      {
-         value = "vga_clk";
-         type = "String";
       }
    }
 }
@@ -1035,7 +1035,7 @@
  <parameter name="projectName">DE2_Media_Computer.qpf</parameter>
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1578206684769" />
+ <parameter name="timeStamp" value="1578234378371" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface
@@ -3203,7 +3203,7 @@
  <connection
    kind="avalon"
    version="13.0"
-   start="Accelator_0.avalon_master_0"
+   start="Accelator_0.avalonmaster"
    end="SRAM.avalon_sram_slave">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x08000000" />
@@ -3215,11 +3215,6 @@
    start="CPU.jtag_debug_module_reset"
    end="Accelator_0.clock_reset" />
  <connection
-   kind="clock"
-   version="13.0"
-   start="External_Clocks.sys_clk"
-   end="Accelator_0.clock" />
- <connection
    kind="avalon"
    version="13.0"
    start="CPU.data_master"
@@ -3228,6 +3223,11 @@
   <parameter name="baseAddress" value="0x10004000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
+ <connection
+   kind="clock"
+   version="13.0"
+   start="External_Clocks.sys_clk"
+   end="Accelator_0.clock" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="0" />
 </system>

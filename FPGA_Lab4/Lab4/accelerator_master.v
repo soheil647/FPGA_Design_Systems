@@ -16,6 +16,7 @@ module AVM_AVALONMASTER_MAGNITUDE #
   input wire [AVM_AVALONMASTER_DATA_WIDTH - 1:0] slv_reg1,
   input wire [AVM_AVALONMASTER_DATA_WIDTH - 1:0] slv_reg2,
   input wire [AVM_AVALONMASTER_DATA_WIDTH - 1:0] slv_reg3,
+  input Master_Done,
 
   // user ports end
   // dont change these ports
@@ -49,10 +50,10 @@ module AVM_AVALONMASTER_MAGNITUDE #
 
   //My registers
   reg[2:0] Now_State;
-  reg Wait_Request;
+  wire Wait_Request;
   reg[AVM_AVALONMASTER_DATA_WIDTH - 1:0] Left_Reg_Data;
   reg[AVM_AVALONMASTER_DATA_WIDTH - 1:0] Right_Reg_Data;
-  reg[AVM_AVALONMASTER_DATA_WIDTH - 1:0] Read_Data;
+  wire[AVM_AVALONMASTER_DATA_WIDTH - 1:0] Read_Data;
   reg[2 * AVM_AVALONMASTER_DATA_WIDTH - 1:0] Sum_Reg;
   reg[10:0] Number_Count;
   reg[18:0] Size_Count;
@@ -65,8 +66,8 @@ module AVM_AVALONMASTER_MAGNITUDE #
   assign AVM_AVALONMASTER_WRITEDATA = writedata;
 
   //My Assigns
-  assign AVM_AVALONMASTER_WAITREQUEST = Wait_Request;
-  assign AVM_AVALONMASTER_READDATA = Read_Data;
+  assign Wait_Request = AVM_AVALONMASTER_WAITREQUEST;
+  assign Read_Data = AVM_AVALONMASTER_READDATA;
 
   /****************************************************************************
   * all main function must be here or in main module. you MUST NOT use control
@@ -88,6 +89,7 @@ module AVM_AVALONMASTER_MAGNITUDE #
       Right_Reg_Data <= 0;
       Number_Count <= 11'b0;
       Size_Count <= 19'b0;
+      writedata <= 0;
       Now_State <= Wait_For_Go;
     end
     else
@@ -156,7 +158,7 @@ module AVM_AVALONMASTER_MAGNITUDE #
                 write <= 1'b1;
                 done <= 1'b0;
                 address <= slv_reg3 + Number_Count << 2;
-                writedata <= Sum_Reg[2 * AVM_AVALONMASTER_DATA_WIDTH:AVM_AVALONMASTER_DATA_WIDTH];
+                writedata <= Sum_Reg[2 * AVM_AVALONMASTER_DATA_WIDTH - 1:AVM_AVALONMASTER_DATA_WIDTH];
             end
         end
 
@@ -197,7 +199,12 @@ module AVM_AVALONMASTER_MAGNITUDE #
             read <= 1'b0;
             address <= 1'b0;
             Number_Count <= 0;
-            Now_State <= Wait_For_Go;
+            if(Master_Done)begin
+                Now_State <= Wait_For_Go;
+            end
+            else begin
+                Now_State <= Done_State;
+            end
         end
       endcase
     end

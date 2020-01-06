@@ -1,4 +1,4 @@
-module AVS_AVALONSLAVE_CTRL #
+module AVS_Accelator #
 (
   // you can add parameters here
   // you can change these parameters
@@ -46,6 +46,7 @@ wire[10:0] Number;
 wire [avm_avalonmaster_data_width - 1:0]reg1;
 wire [avm_avalonmaster_data_width - 1:0]reg2;
 wire [avm_avalonmaster_data_width - 1:0]reg3;
+wire Temp_Done;
 
 // control interface instanciation
 AVS_AVALONSLAVE_CTRL #
@@ -57,13 +58,14 @@ AVS_AVALONSLAVE_CTRL #
 ) AVS_AVALONSLAVE_CTRL_INST // instance  of module must be here
 (
   // user ports begin
-  .START(start),
+  .Go(start),
   .DONE(done),
   .Number_Out(Number),
   .Size_Out(Size),
   .slv_reg1_out(reg1),
   .slv_reg2_out(reg2),
   .slv_reg3_out(reg3),
+  .Slave_Done(Temp_Done),
   // user ports end
   // dont change these ports
   .CSI_CLOCK_CLK(csi_clock_clk),
@@ -86,13 +88,14 @@ AVM_AVALONMASTER_MAGNITUDE #
 ) AVM_AVALONMASTER_MAGNITUDE_INST // instance  of module must be here
 (
   // user ports begin
-  .START(start),
+  .Go(start),
   .DONE(done),
   .Size(Size),
   .Number(Number),
   .slv_reg1(reg1),
   .slv_reg2(reg2),
   .slv_reg3(reg3),
+  .Master_Done(Temp_Done),
   // user ports end
   // dont change these ports
   .CSI_CLOCK_CLK(csi_clock_clk),

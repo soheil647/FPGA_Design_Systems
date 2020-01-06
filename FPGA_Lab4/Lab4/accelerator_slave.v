@@ -14,6 +14,7 @@ module AVS_AVALONSLAVE_CTRL #
   output wire [AVS_AVALONSLAVE_DATA_WIDTH - 1:0] slv_reg1_out,
   output wire [AVS_AVALONSLAVE_DATA_WIDTH - 1:0] slv_reg2_out,
   output wire [AVS_AVALONSLAVE_DATA_WIDTH - 1:0] slv_reg3_out,
+  output wire Slave_Done,
 
   // user ports end
   // dont change these ports
@@ -42,13 +43,11 @@ module AVS_AVALONSLAVE_CTRL #
   //My registers
   wire[10:0] Number;
   wire[18:0] Size;
-
   // I/O assignment
   // never directly send values to output
 
   assign AVS_AVALONSLAVE_WAITREQUEST = wait_request;
   assign AVS_AVALONSLAVE_READDATA = read_data;
-
   //My Assigns
   assign Number_Out = Number;
   assign Size_Out = Size;
@@ -63,6 +62,7 @@ module AVS_AVALONSLAVE_CTRL #
     // usually resets are active low but you can change its trigger type
     if(CSI_CLOCK_RESET == 0)
     begin
+      read_data <= 0;
       slv_reg0 <= 0;
       slv_reg1 <= 0;
       slv_reg2 <= 0;
@@ -113,5 +113,6 @@ module AVS_AVALONSLAVE_CTRL #
   assign Go = slv_reg0[0];
   assign Number = slv_reg0[11:1];
   assign Size = slv_reg0[30:12];
+  assign Slave_Done = slv_reg0[31];
 
 endmodule
