@@ -1,0 +1,1165 @@
+# Copyright (C) 1991-2006 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		DE2_Basic_Computer.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name DEVICE EP2C35F672C6
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name TOP_LEVEL_ENTITY DE2_Media_Computer
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 6.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:00:54  JUNE 11, 2007"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_location_assignment PIN_N25 -to SW[0]
+set_location_assignment PIN_N26 -to SW[1]
+set_location_assignment PIN_P25 -to SW[2]
+set_location_assignment PIN_AE14 -to SW[3]
+set_location_assignment PIN_AF14 -to SW[4]
+set_location_assignment PIN_AD13 -to SW[5]
+set_location_assignment PIN_AC13 -to SW[6]
+set_location_assignment PIN_C13 -to SW[7]
+set_location_assignment PIN_B13 -to SW[8]
+set_location_assignment PIN_A13 -to SW[9]
+set_location_assignment PIN_N1 -to SW[10]
+set_location_assignment PIN_P1 -to SW[11]
+set_location_assignment PIN_P2 -to SW[12]
+set_location_assignment PIN_T7 -to SW[13]
+set_location_assignment PIN_U3 -to SW[14]
+set_location_assignment PIN_U4 -to SW[15]
+set_location_assignment PIN_V1 -to SW[16]
+set_location_assignment PIN_V2 -to SW[17]
+set_location_assignment PIN_T6 -to DRAM_ADDR[0]
+set_location_assignment PIN_V4 -to DRAM_ADDR[1]
+set_location_assignment PIN_V3 -to DRAM_ADDR[2]
+set_location_assignment PIN_W2 -to DRAM_ADDR[3]
+set_location_assignment PIN_W1 -to DRAM_ADDR[4]
+set_location_assignment PIN_U6 -to DRAM_ADDR[5]
+set_location_assignment PIN_U7 -to DRAM_ADDR[6]
+set_location_assignment PIN_U5 -to DRAM_ADDR[7]
+set_location_assignment PIN_W4 -to DRAM_ADDR[8]
+set_location_assignment PIN_W3 -to DRAM_ADDR[9]
+set_location_assignment PIN_Y1 -to DRAM_ADDR[10]
+set_location_assignment PIN_V5 -to DRAM_ADDR[11]
+set_location_assignment PIN_AE2 -to DRAM_BA_0
+set_location_assignment PIN_AE3 -to DRAM_BA_1
+set_location_assignment PIN_AB3 -to DRAM_CAS_N
+set_location_assignment PIN_AA6 -to DRAM_CKE
+set_location_assignment PIN_AA7 -to DRAM_CLK
+set_location_assignment PIN_AC3 -to DRAM_CS_N
+set_location_assignment PIN_V6 -to DRAM_DQ[0]
+set_location_assignment PIN_AA2 -to DRAM_DQ[1]
+set_location_assignment PIN_AA1 -to DRAM_DQ[2]
+set_location_assignment PIN_Y3 -to DRAM_DQ[3]
+set_location_assignment PIN_Y4 -to DRAM_DQ[4]
+set_location_assignment PIN_R8 -to DRAM_DQ[5]
+set_location_assignment PIN_T8 -to DRAM_DQ[6]
+set_location_assignment PIN_V7 -to DRAM_DQ[7]
+set_location_assignment PIN_W6 -to DRAM_DQ[8]
+set_location_assignment PIN_AB2 -to DRAM_DQ[9]
+set_location_assignment PIN_AB1 -to DRAM_DQ[10]
+set_location_assignment PIN_AA4 -to DRAM_DQ[11]
+set_location_assignment PIN_AA3 -to DRAM_DQ[12]
+set_location_assignment PIN_AC2 -to DRAM_DQ[13]
+set_location_assignment PIN_AC1 -to DRAM_DQ[14]
+set_location_assignment PIN_AA5 -to DRAM_DQ[15]
+set_location_assignment PIN_AD2 -to DRAM_LDQM
+set_location_assignment PIN_Y5 -to DRAM_UDQM
+set_location_assignment PIN_AB4 -to DRAM_RAS_N
+set_location_assignment PIN_AD3 -to DRAM_WE_N
+set_location_assignment PIN_AC18 -to FL_ADDR[0]
+set_location_assignment PIN_AB18 -to FL_ADDR[1]
+set_location_assignment PIN_AE19 -to FL_ADDR[2]
+set_location_assignment PIN_AF19 -to FL_ADDR[3]
+set_location_assignment PIN_AE18 -to FL_ADDR[4]
+set_location_assignment PIN_AF18 -to FL_ADDR[5]
+set_location_assignment PIN_Y16 -to FL_ADDR[6]
+set_location_assignment PIN_AA16 -to FL_ADDR[7]
+set_location_assignment PIN_AD17 -to FL_ADDR[8]
+set_location_assignment PIN_AC17 -to FL_ADDR[9]
+set_location_assignment PIN_AE17 -to FL_ADDR[10]
+set_location_assignment PIN_AF17 -to FL_ADDR[11]
+set_location_assignment PIN_W16 -to FL_ADDR[12]
+set_location_assignment PIN_W15 -to FL_ADDR[13]
+set_location_assignment PIN_AC16 -to FL_ADDR[14]
+set_location_assignment PIN_AD16 -to FL_ADDR[15]
+set_location_assignment PIN_AE16 -to FL_ADDR[16]
+set_location_assignment PIN_AC15 -to FL_ADDR[17]
+set_location_assignment PIN_AB15 -to FL_ADDR[18]
+set_location_assignment PIN_AA15 -to FL_ADDR[19]
+set_location_assignment PIN_Y15 -to FL_ADDR[20]
+set_location_assignment PIN_Y14 -to FL_ADDR[21]
+set_location_assignment PIN_V17 -to FL_CE_N
+set_location_assignment PIN_W17 -to FL_OE_N
+set_location_assignment PIN_AD19 -to FL_DQ[0]
+set_location_assignment PIN_AC19 -to FL_DQ[1]
+set_location_assignment PIN_AF20 -to FL_DQ[2]
+set_location_assignment PIN_AE20 -to FL_DQ[3]
+set_location_assignment PIN_AB20 -to FL_DQ[4]
+set_location_assignment PIN_AC20 -to FL_DQ[5]
+set_location_assignment PIN_AF21 -to FL_DQ[6]
+set_location_assignment PIN_AE21 -to FL_DQ[7]
+set_location_assignment PIN_AA18 -to FL_RST_N
+set_location_assignment PIN_AA17 -to FL_WE_N
+set_location_assignment PIN_AF10 -to HEX0[0]
+set_location_assignment PIN_AB12 -to HEX0[1]
+set_location_assignment PIN_AC12 -to HEX0[2]
+set_location_assignment PIN_AD11 -to HEX0[3]
+set_location_assignment PIN_AE11 -to HEX0[4]
+set_location_assignment PIN_V14 -to HEX0[5]
+set_location_assignment PIN_V13 -to HEX0[6]
+set_location_assignment PIN_V20 -to HEX1[0]
+set_location_assignment PIN_V21 -to HEX1[1]
+set_location_assignment PIN_W21 -to HEX1[2]
+set_location_assignment PIN_Y22 -to HEX1[3]
+set_location_assignment PIN_AA24 -to HEX1[4]
+set_location_assignment PIN_AA23 -to HEX1[5]
+set_location_assignment PIN_AB24 -to HEX1[6]
+set_location_assignment PIN_AB23 -to HEX2[0]
+set_location_assignment PIN_V22 -to HEX2[1]
+set_location_assignment PIN_AC25 -to HEX2[2]
+set_location_assignment PIN_AC26 -to HEX2[3]
+set_location_assignment PIN_AB26 -to HEX2[4]
+set_location_assignment PIN_AB25 -to HEX2[5]
+set_location_assignment PIN_Y24 -to HEX2[6]
+set_location_assignment PIN_Y23 -to HEX3[0]
+set_location_assignment PIN_AA25 -to HEX3[1]
+set_location_assignment PIN_AA26 -to HEX3[2]
+set_location_assignment PIN_Y26 -to HEX3[3]
+set_location_assignment PIN_Y25 -to HEX3[4]
+set_location_assignment PIN_U22 -to HEX3[5]
+set_location_assignment PIN_W24 -to HEX3[6]
+set_location_assignment PIN_U9 -to HEX4[0]
+set_location_assignment PIN_U1 -to HEX4[1]
+set_location_assignment PIN_U2 -to HEX4[2]
+set_location_assignment PIN_T4 -to HEX4[3]
+set_location_assignment PIN_R7 -to HEX4[4]
+set_location_assignment PIN_R6 -to HEX4[5]
+set_location_assignment PIN_T3 -to HEX4[6]
+set_location_assignment PIN_T2 -to HEX5[0]
+set_location_assignment PIN_P6 -to HEX5[1]
+set_location_assignment PIN_P7 -to HEX5[2]
+set_location_assignment PIN_T9 -to HEX5[3]
+set_location_assignment PIN_R5 -to HEX5[4]
+set_location_assignment PIN_R4 -to HEX5[5]
+set_location_assignment PIN_R3 -to HEX5[6]
+set_location_assignment PIN_R2 -to HEX6[0]
+set_location_assignment PIN_P4 -to HEX6[1]
+set_location_assignment PIN_P3 -to HEX6[2]
+set_location_assignment PIN_M2 -to HEX6[3]
+set_location_assignment PIN_M3 -to HEX6[4]
+set_location_assignment PIN_M5 -to HEX6[5]
+set_location_assignment PIN_M4 -to HEX6[6]
+set_location_assignment PIN_L3 -to HEX7[0]
+set_location_assignment PIN_L2 -to HEX7[1]
+set_location_assignment PIN_L9 -to HEX7[2]
+set_location_assignment PIN_L6 -to HEX7[3]
+set_location_assignment PIN_L7 -to HEX7[4]
+set_location_assignment PIN_P9 -to HEX7[5]
+set_location_assignment PIN_N9 -to HEX7[6]
+set_location_assignment PIN_G26 -to KEY[0]
+set_location_assignment PIN_N23 -to KEY[1]
+set_location_assignment PIN_P23 -to KEY[2]
+set_location_assignment PIN_W26 -to KEY[3]
+set_location_assignment PIN_AE23 -to LEDR[0]
+set_location_assignment PIN_AF23 -to LEDR[1]
+set_location_assignment PIN_AB21 -to LEDR[2]
+set_location_assignment PIN_AC22 -to LEDR[3]
+set_location_assignment PIN_AD22 -to LEDR[4]
+set_location_assignment PIN_AD23 -to LEDR[5]
+set_location_assignment PIN_AD21 -to LEDR[6]
+set_location_assignment PIN_AC21 -to LEDR[7]
+set_location_assignment PIN_AA14 -to LEDR[8]
+set_location_assignment PIN_Y13 -to LEDR[9]
+set_location_assignment PIN_AA13 -to LEDR[10]
+set_location_assignment PIN_AC14 -to LEDR[11]
+set_location_assignment PIN_AD15 -to LEDR[12]
+set_location_assignment PIN_AE15 -to LEDR[13]
+set_location_assignment PIN_AF13 -to LEDR[14]
+set_location_assignment PIN_AE13 -to LEDR[15]
+set_location_assignment PIN_AE12 -to LEDR[16]
+set_location_assignment PIN_AD12 -to LEDR[17]
+set_location_assignment PIN_AE22 -to LEDG[0]
+set_location_assignment PIN_AF22 -to LEDG[1]
+set_location_assignment PIN_W19 -to LEDG[2]
+set_location_assignment PIN_V18 -to LEDG[3]
+set_location_assignment PIN_U18 -to LEDG[4]
+set_location_assignment PIN_U17 -to LEDG[5]
+set_location_assignment PIN_AA20 -to LEDG[6]
+set_location_assignment PIN_Y18 -to LEDG[7]
+set_location_assignment PIN_Y12 -to LEDG[8]
+set_location_assignment PIN_D13 -to CLOCK_27
+set_location_assignment PIN_N2 -to CLOCK_50
+set_location_assignment PIN_P26 -to EXT_CLOCK
+set_location_assignment PIN_D26 -to PS2_CLK
+set_location_assignment PIN_C24 -to PS2_DAT
+set_location_assignment PIN_C25 -to UART_RXD
+set_location_assignment PIN_B25 -to UART_TXD
+set_location_assignment PIN_K4 -to LCD_RW
+set_location_assignment PIN_K3 -to LCD_EN
+set_location_assignment PIN_K1 -to LCD_RS
+set_location_assignment PIN_J1 -to LCD_DATA[0]
+set_location_assignment PIN_J2 -to LCD_DATA[1]
+set_location_assignment PIN_H1 -to LCD_DATA[2]
+set_location_assignment PIN_H2 -to LCD_DATA[3]
+set_location_assignment PIN_J4 -to LCD_DATA[4]
+set_location_assignment PIN_J3 -to LCD_DATA[5]
+set_location_assignment PIN_H4 -to LCD_DATA[6]
+set_location_assignment PIN_H3 -to LCD_DATA[7]
+set_location_assignment PIN_L4 -to LCD_ON
+set_location_assignment PIN_K2 -to LCD_BLON
+set_location_assignment PIN_AE4 -to SRAM_ADDR[0]
+set_location_assignment PIN_AF4 -to SRAM_ADDR[1]
+set_location_assignment PIN_AC5 -to SRAM_ADDR[2]
+set_location_assignment PIN_AC6 -to SRAM_ADDR[3]
+set_location_assignment PIN_AD4 -to SRAM_ADDR[4]
+set_location_assignment PIN_AD5 -to SRAM_ADDR[5]
+set_location_assignment PIN_AE5 -to SRAM_ADDR[6]
+set_location_assignment PIN_AF5 -to SRAM_ADDR[7]
+set_location_assignment PIN_AD6 -to SRAM_ADDR[8]
+set_location_assignment PIN_AD7 -to SRAM_ADDR[9]
+set_location_assignment PIN_V10 -to SRAM_ADDR[10]
+set_location_assignment PIN_V9 -to SRAM_ADDR[11]
+set_location_assignment PIN_AC7 -to SRAM_ADDR[12]
+set_location_assignment PIN_W8 -to SRAM_ADDR[13]
+set_location_assignment PIN_W10 -to SRAM_ADDR[14]
+set_location_assignment PIN_Y10 -to SRAM_ADDR[15]
+set_location_assignment PIN_AB8 -to SRAM_ADDR[16]
+set_location_assignment PIN_AC8 -to SRAM_ADDR[17]
+set_location_assignment PIN_AD8 -to SRAM_DQ[0]
+set_location_assignment PIN_AE6 -to SRAM_DQ[1]
+set_location_assignment PIN_AF6 -to SRAM_DQ[2]
+set_location_assignment PIN_AA9 -to SRAM_DQ[3]
+set_location_assignment PIN_AA10 -to SRAM_DQ[4]
+set_location_assignment PIN_AB10 -to SRAM_DQ[5]
+set_location_assignment PIN_AA11 -to SRAM_DQ[6]
+set_location_assignment PIN_Y11 -to SRAM_DQ[7]
+set_location_assignment PIN_AE7 -to SRAM_DQ[8]
+set_location_assignment PIN_AF7 -to SRAM_DQ[9]
+set_location_assignment PIN_AE8 -to SRAM_DQ[10]
+set_location_assignment PIN_AF8 -to SRAM_DQ[11]
+set_location_assignment PIN_W11 -to SRAM_DQ[12]
+set_location_assignment PIN_W12 -to SRAM_DQ[13]
+set_location_assignment PIN_AC9 -to SRAM_DQ[14]
+set_location_assignment PIN_AC10 -to SRAM_DQ[15]
+set_location_assignment PIN_AE10 -to SRAM_WE_N
+set_location_assignment PIN_AD10 -to SRAM_OE_N
+set_location_assignment PIN_AF9 -to SRAM_UB_N
+set_location_assignment PIN_AE9 -to SRAM_LB_N
+set_location_assignment PIN_AC11 -to SRAM_CE_N
+set_location_assignment PIN_K7 -to OTG_ADDR[0]
+set_location_assignment PIN_F2 -to OTG_ADDR[1]
+set_location_assignment PIN_F1 -to OTG_CS_N
+set_location_assignment PIN_G2 -to OTG_RD_N
+set_location_assignment PIN_G1 -to OTG_WR_N
+set_location_assignment PIN_G5 -to OTG_RST_N
+set_location_assignment PIN_F4 -to OTG_DATA[0]
+set_location_assignment PIN_D2 -to OTG_DATA[1]
+set_location_assignment PIN_D1 -to OTG_DATA[2]
+set_location_assignment PIN_F7 -to OTG_DATA[3]
+set_location_assignment PIN_J5 -to OTG_DATA[4]
+set_location_assignment PIN_J8 -to OTG_DATA[5]
+set_location_assignment PIN_J7 -to OTG_DATA[6]
+set_location_assignment PIN_H6 -to OTG_DATA[7]
+set_location_assignment PIN_E2 -to OTG_DATA[8]
+set_location_assignment PIN_E1 -to OTG_DATA[9]
+set_location_assignment PIN_K6 -to OTG_DATA[10]
+set_location_assignment PIN_K5 -to OTG_DATA[11]
+set_location_assignment PIN_G4 -to OTG_DATA[12]
+set_location_assignment PIN_G3 -to OTG_DATA[13]
+set_location_assignment PIN_J6 -to OTG_DATA[14]
+set_location_assignment PIN_K8 -to OTG_DATA[15]
+set_location_assignment PIN_B3 -to OTG_INT0
+set_location_assignment PIN_C3 -to OTG_INT1
+set_location_assignment PIN_C2 -to OTG_DACK0_N
+set_location_assignment PIN_B2 -to OTG_DACK1_N
+set_location_assignment PIN_F6 -to OTG_DREQ0
+set_location_assignment PIN_E5 -to OTG_DREQ1
+set_location_assignment PIN_F3 -to OTG_FSPEED
+set_location_assignment PIN_G6 -to OTG_LSPEED
+set_location_assignment PIN_B14 -to TDI
+set_location_assignment PIN_A14 -to TCS
+set_location_assignment PIN_D14 -to TCK
+set_location_assignment PIN_F14 -to TDO
+set_location_assignment PIN_C4 -to TD_RESET
+set_location_assignment PIN_C8 -to VGA_R[0]
+set_location_assignment PIN_F10 -to VGA_R[1]
+set_location_assignment PIN_G10 -to VGA_R[2]
+set_location_assignment PIN_D9 -to VGA_R[3]
+set_location_assignment PIN_C9 -to VGA_R[4]
+set_location_assignment PIN_A8 -to VGA_R[5]
+set_location_assignment PIN_H11 -to VGA_R[6]
+set_location_assignment PIN_H12 -to VGA_R[7]
+set_location_assignment PIN_F11 -to VGA_R[8]
+set_location_assignment PIN_E10 -to VGA_R[9]
+set_location_assignment PIN_B9 -to VGA_G[0]
+set_location_assignment PIN_A9 -to VGA_G[1]
+set_location_assignment PIN_C10 -to VGA_G[2]
+set_location_assignment PIN_D10 -to VGA_G[3]
+set_location_assignment PIN_B10 -to VGA_G[4]
+set_location_assignment PIN_A10 -to VGA_G[5]
+set_location_assignment PIN_G11 -to VGA_G[6]
+set_location_assignment PIN_D11 -to VGA_G[7]
+set_location_assignment PIN_E12 -to VGA_G[8]
+set_location_assignment PIN_D12 -to VGA_G[9]
+set_location_assignment PIN_J13 -to VGA_B[0]
+set_location_assignment PIN_J14 -to VGA_B[1]
+set_location_assignment PIN_F12 -to VGA_B[2]
+set_location_assignment PIN_G12 -to VGA_B[3]
+set_location_assignment PIN_J10 -to VGA_B[4]
+set_location_assignment PIN_J11 -to VGA_B[5]
+set_location_assignment PIN_C11 -to VGA_B[6]
+set_location_assignment PIN_B11 -to VGA_B[7]
+set_location_assignment PIN_C12 -to VGA_B[8]
+set_location_assignment PIN_B12 -to VGA_B[9]
+set_location_assignment PIN_B8 -to VGA_CLK
+set_location_assignment PIN_D6 -to VGA_BLANK
+set_location_assignment PIN_A7 -to VGA_HS
+set_location_assignment PIN_D8 -to VGA_VS
+set_location_assignment PIN_B7 -to VGA_SYNC
+set_location_assignment PIN_A6 -to I2C_SCLK
+set_location_assignment PIN_B6 -to I2C_SDAT
+set_location_assignment PIN_J9 -to TD_DATA[0]
+set_location_assignment PIN_E8 -to TD_DATA[1]
+set_location_assignment PIN_H8 -to TD_DATA[2]
+set_location_assignment PIN_H10 -to TD_DATA[3]
+set_location_assignment PIN_G9 -to TD_DATA[4]
+set_location_assignment PIN_F9 -to TD_DATA[5]
+set_location_assignment PIN_D7 -to TD_DATA[6]
+set_location_assignment PIN_C7 -to TD_DATA[7]
+set_location_assignment PIN_D5 -to TD_HS
+set_location_assignment PIN_K9 -to TD_VS
+set_location_assignment PIN_C5 -to AUD_ADCLRCK
+set_location_assignment PIN_B5 -to AUD_ADCDAT
+set_location_assignment PIN_C6 -to AUD_DACLRCK
+set_location_assignment PIN_A4 -to AUD_DACDAT
+set_location_assignment PIN_A5 -to AUD_XCK
+set_location_assignment PIN_B4 -to AUD_BCLK
+set_location_assignment PIN_D17 -to ENET_DATA[0]
+set_location_assignment PIN_C17 -to ENET_DATA[1]
+set_location_assignment PIN_B18 -to ENET_DATA[2]
+set_location_assignment PIN_A18 -to ENET_DATA[3]
+set_location_assignment PIN_B17 -to ENET_DATA[4]
+set_location_assignment PIN_A17 -to ENET_DATA[5]
+set_location_assignment PIN_B16 -to ENET_DATA[6]
+set_location_assignment PIN_B15 -to ENET_DATA[7]
+set_location_assignment PIN_B20 -to ENET_DATA[8]
+set_location_assignment PIN_A20 -to ENET_DATA[9]
+set_location_assignment PIN_C19 -to ENET_DATA[10]
+set_location_assignment PIN_D19 -to ENET_DATA[11]
+set_location_assignment PIN_B19 -to ENET_DATA[12]
+set_location_assignment PIN_A19 -to ENET_DATA[13]
+set_location_assignment PIN_E18 -to ENET_DATA[14]
+set_location_assignment PIN_D18 -to ENET_DATA[15]
+set_location_assignment PIN_B24 -to ENET_CLK
+set_location_assignment PIN_A21 -to ENET_CMD
+set_location_assignment PIN_A23 -to ENET_CS_N
+set_location_assignment PIN_B21 -to ENET_INT
+set_location_assignment PIN_A22 -to ENET_RD_N
+set_location_assignment PIN_B22 -to ENET_WR_N
+set_location_assignment PIN_B23 -to ENET_RST_N
+set_location_assignment PIN_AE24 -to IRDA_TXD
+set_location_assignment PIN_AE25 -to IRDA_RXD
+set_location_assignment PIN_AD24 -to SD_DAT
+set_location_assignment PIN_AC23 -to SD_DAT3
+set_location_assignment PIN_Y21 -to SD_CMD
+set_location_assignment PIN_AD25 -to SD_CLK
+set_location_assignment PIN_D25 -to GPIO_0[0]
+set_location_assignment PIN_J22 -to GPIO_0[1]
+set_location_assignment PIN_E26 -to GPIO_0[2]
+set_location_assignment PIN_E25 -to GPIO_0[3]
+set_location_assignment PIN_F24 -to GPIO_0[4]
+set_location_assignment PIN_F23 -to GPIO_0[5]
+set_location_assignment PIN_J21 -to GPIO_0[6]
+set_location_assignment PIN_J20 -to GPIO_0[7]
+set_location_assignment PIN_F25 -to GPIO_0[8]
+set_location_assignment PIN_F26 -to GPIO_0[9]
+set_location_assignment PIN_N18 -to GPIO_0[10]
+set_location_assignment PIN_P18 -to GPIO_0[11]
+set_location_assignment PIN_G23 -to GPIO_0[12]
+set_location_assignment PIN_G24 -to GPIO_0[13]
+set_location_assignment PIN_K22 -to GPIO_0[14]
+set_location_assignment PIN_G25 -to GPIO_0[15]
+set_location_assignment PIN_H23 -to GPIO_0[16]
+set_location_assignment PIN_H24 -to GPIO_0[17]
+set_location_assignment PIN_J23 -to GPIO_0[18]
+set_location_assignment PIN_J24 -to GPIO_0[19]
+set_location_assignment PIN_H25 -to GPIO_0[20]
+set_location_assignment PIN_H26 -to GPIO_0[21]
+set_location_assignment PIN_H19 -to GPIO_0[22]
+set_location_assignment PIN_K18 -to GPIO_0[23]
+set_location_assignment PIN_K19 -to GPIO_0[24]
+set_location_assignment PIN_K21 -to GPIO_0[25]
+set_location_assignment PIN_K23 -to GPIO_0[26]
+set_location_assignment PIN_K24 -to GPIO_0[27]
+set_location_assignment PIN_L21 -to GPIO_0[28]
+set_location_assignment PIN_L20 -to GPIO_0[29]
+set_location_assignment PIN_J25 -to GPIO_0[30]
+set_location_assignment PIN_J26 -to GPIO_0[31]
+set_location_assignment PIN_L23 -to GPIO_0[32]
+set_location_assignment PIN_L24 -to GPIO_0[33]
+set_location_assignment PIN_L25 -to GPIO_0[34]
+set_location_assignment PIN_L19 -to GPIO_0[35]
+set_location_assignment PIN_K25 -to GPIO_1[0]
+set_location_assignment PIN_K26 -to GPIO_1[1]
+set_location_assignment PIN_M22 -to GPIO_1[2]
+set_location_assignment PIN_M23 -to GPIO_1[3]
+set_location_assignment PIN_M19 -to GPIO_1[4]
+set_location_assignment PIN_M20 -to GPIO_1[5]
+set_location_assignment PIN_N20 -to GPIO_1[6]
+set_location_assignment PIN_M21 -to GPIO_1[7]
+set_location_assignment PIN_M24 -to GPIO_1[8]
+set_location_assignment PIN_M25 -to GPIO_1[9]
+set_location_assignment PIN_N24 -to GPIO_1[10]
+set_location_assignment PIN_P24 -to GPIO_1[11]
+set_location_assignment PIN_R25 -to GPIO_1[12]
+set_location_assignment PIN_R24 -to GPIO_1[13]
+set_location_assignment PIN_R20 -to GPIO_1[14]
+set_location_assignment PIN_T22 -to GPIO_1[15]
+set_location_assignment PIN_T23 -to GPIO_1[16]
+set_location_assignment PIN_T24 -to GPIO_1[17]
+set_location_assignment PIN_T25 -to GPIO_1[18]
+set_location_assignment PIN_T18 -to GPIO_1[19]
+set_location_assignment PIN_T21 -to GPIO_1[20]
+set_location_assignment PIN_T20 -to GPIO_1[21]
+set_location_assignment PIN_U26 -to GPIO_1[22]
+set_location_assignment PIN_U25 -to GPIO_1[23]
+set_location_assignment PIN_U23 -to GPIO_1[24]
+set_location_assignment PIN_U24 -to GPIO_1[25]
+set_location_assignment PIN_R19 -to GPIO_1[26]
+set_location_assignment PIN_T19 -to GPIO_1[27]
+set_location_assignment PIN_U20 -to GPIO_1[28]
+set_location_assignment PIN_U21 -to GPIO_1[29]
+set_location_assignment PIN_V26 -to GPIO_1[30]
+set_location_assignment PIN_V25 -to GPIO_1[31]
+set_location_assignment PIN_V24 -to GPIO_1[32]
+set_location_assignment PIN_V23 -to GPIO_1[33]
+set_location_assignment PIN_W25 -to GPIO_1[34]
+set_location_assignment PIN_W23 -to GPIO_1[35]
+set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
+
+set_global_assignment -name IGNORE_CLOCK_SETTINGS ON
+set_global_assignment -name FMAX_REQUIREMENT "50 MHz"
+set_global_assignment -name PARTITION_COLOR 2147039 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to *
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to *
+set_instance_assignment -name TSU_REQUIREMENT "10 ns" -from * -to *
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to *
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to I2C_SCLK
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to I2C_SDAT
+
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_global_assignment -name USE_SIGNALTAP_FILE stp2.stp
+set_location_assignment PIN_C16 -to TD_CLK27
+set_global_assignment -name VERILOG_FILE Lab4/accelerator_slave.v
+set_global_assignment -name VERILOG_FILE Lab4/accelerator_master.v
+set_global_assignment -name VERILOG_FILE Lab4/accelerator.v
+set_global_assignment -name SDC_FILE DE2_Media_Computer.sdc
+set_global_assignment -name QIP_FILE nios_system/synthesis/nios_system.qip
+set_global_assignment -name VERILOG_FILE DE2_Media_Computer.v
+set_global_assignment -name SIGNALTAP_FILE stp2.stp
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_PIN_TO_SLD_NODE_ENTITY_PORT acq_clk -to auto_stp_external_clock_0 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|Temp1_State[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|Temp1_State[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|Temp1_State[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[17] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[18] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[19] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[20] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[21] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[22] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[23] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[24] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[25] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[26] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[27] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[28] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[29] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[30] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[31] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[32] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[33] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[34] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[35] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[36] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[37] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[38] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[39] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[40] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[41] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[42] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[43] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[44] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[45] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[46] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[47] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[48] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[49] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[50] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[51] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[52] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[53] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[54] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[55] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[56] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[57] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[58] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[59] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[60] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[61] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[62] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[63] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[64] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[65] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[66] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[67] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[68] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[69] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[70] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[71] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[72] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[73] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[74] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[75] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[76] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[77] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[78] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[79] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[80] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[81] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[82] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[83] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[84] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[85] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[86] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[87] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[88] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[89] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[90] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[91] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[92] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[93] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[94] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[95] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[96] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[97] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[98] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[99] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[100] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[101] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[102] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[103] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[104] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[105] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[106] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[107] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[108] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[109] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[110] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[111] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[112] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[113] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[114] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[115] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[116] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[117] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[118] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[119] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[120] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[121] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[122] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[123] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[124] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[125] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[126] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[127] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[128] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[129] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[130] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[9]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[131] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[0]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[132] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[10]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[133] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[11]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[134] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[12]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[135] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[13]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[136] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[14]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[137] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[15]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[138] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[16]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[139] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[17]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[140] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[18]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[141] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[19]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[142] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[1]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[143] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[20]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[144] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[21]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[145] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[22]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[146] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[23]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[147] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[24]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[148] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[25]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[149] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[26]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[150] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[27]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[151] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[28]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[152] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[29]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[153] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[2]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[154] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[30]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[155] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[31]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[156] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[3]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[157] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[4]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[158] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[5]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[159] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[6]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[160] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[7]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[161] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[8]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[162] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[9]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[163] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[0]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[164] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[10]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[165] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[1]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[166] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[2]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[167] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[3]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[168] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[4]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[169] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[5]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[170] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[6]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[171] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[7]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[172] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[8]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[173] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[9]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[174] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[0]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[175] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[10]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[176] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[11]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[177] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[12]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[178] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[13]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[179] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[14]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[180] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[15]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[181] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[16]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[182] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[17]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[183] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[18]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[184] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[19]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[185] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[1]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[186] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[20]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[187] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[21]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[188] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[22]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[189] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[23]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[190] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[24]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[191] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[25]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[192] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[26]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[193] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[27]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[194] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[28]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[195] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[29]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[196] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[2]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[197] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[30]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[198] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[31]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[199] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[3]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[200] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[4]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[201] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[5]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[202] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[6]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[203] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[7]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[204] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[8]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[205] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[9]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[206] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[0]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[207] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[10]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[208] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[11]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[209] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[12]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[210] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[13]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[211] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[14]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[212] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[15]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[213] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[16]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[214] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[17]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[215] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[18]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[216] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[1]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[217] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[2]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[218] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[3]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[219] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[4]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[220] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[5]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[221] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[6]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[222] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[7]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[223] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[8]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[224] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[9]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[225] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[0]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[226] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[10]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[227] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[11]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[228] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[12]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[229] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[13]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[230] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[14]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[231] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[15]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[232] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[16]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[233] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[17]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[234] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[18]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[235] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[19]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[236] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[1]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[237] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[20]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[238] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[21]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[239] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[22]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[240] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[23]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[241] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[24]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[242] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[25]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[243] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[26]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[244] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[27]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[245] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[28]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[246] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[29]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[247] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[2]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[248] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[30]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[249] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[31]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[250] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[32]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[251] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[33]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[252] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[34]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[253] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[35]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[254] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[36]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[255] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[37]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[256] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[38]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[257] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[39]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[258] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[3]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[259] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[40]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[260] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[41]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[261] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[42]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[262] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[43]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[263] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[44]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[264] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[45]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[265] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[46]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[266] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[47]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[267] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[48]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[268] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[49]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[269] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[4]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[270] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[50]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[271] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[51]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[272] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[52]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[273] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[53]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[274] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[54]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[275] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[55]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[276] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[56]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[277] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[57]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[278] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[58]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[279] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[59]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[280] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[5]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[281] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[60]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[282] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[61]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[283] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[62]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[284] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[63]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[285] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[6]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[286] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[7]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[287] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[8]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[288] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[9]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[289] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|done" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[290] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|read" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[291] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|write" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[292] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[293] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[294] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[295] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[296] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[297] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[298] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[299] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[300] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[301] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[302] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[303] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[304] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[305] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[306] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[307] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[308] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[309] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[310] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[311] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[312] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[313] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[314] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[315] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[316] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[317] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[318] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[319] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[320] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[321] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[322] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[323] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|Temp1_State[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|Temp1_State[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|Temp1_State[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[22] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[23] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[24] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[27] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[28] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[29] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[30] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[31] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[32] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[33] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[34] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg0[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[35] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[36] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[37] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[38] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[39] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[40] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[41] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[42] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[43] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[44] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[45] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[46] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[47] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[48] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[49] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[50] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[51] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[52] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[53] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[54] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[55] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[56] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[57] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[58] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[59] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[60] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[61] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[62] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[63] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[64] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[65] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[66] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg1[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[67] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[68] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[69] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[70] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[71] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[72] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[73] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[74] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[75] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[76] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[77] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[78] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[79] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[80] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[81] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[82] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[83] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[84] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[85] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[86] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[87] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[88] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[89] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[90] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[91] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[92] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[93] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[94] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[95] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[96] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[97] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[98] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg2[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[99] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[100] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[101] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[102] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[103] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[104] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[105] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[106] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[107] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[108] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[109] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[110] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[111] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[112] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[113] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[114] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[115] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[116] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[117] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[118] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[119] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[120] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[121] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[122] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[123] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[124] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[125] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[126] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[127] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[128] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[129] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[130] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVS_AVALONSLAVE_CTRL:AVS_AVALONSLAVE_CTRL_INST|slv_reg3[9]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[131] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[0]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[132] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[10]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[133] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[11]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[134] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[12]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[135] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[13]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[136] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[14]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[137] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[15]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[138] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[16]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[139] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[17]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[140] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[18]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[141] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[19]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[142] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[1]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[143] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[20]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[144] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[21]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[145] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[22]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[146] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[23]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[147] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[24]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[148] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[25]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[149] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[26]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[150] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[27]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[151] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[28]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[152] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[29]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[153] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[2]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[154] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[30]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[155] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[31]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[156] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[3]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[157] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[4]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[158] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[5]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[159] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[6]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[160] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[7]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[161] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[8]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[162] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Left_Reg_Data[9]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[163] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[0]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[164] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[10]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[165] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[1]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[166] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[2]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[167] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[3]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[168] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[4]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[169] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[5]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[170] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[6]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[171] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[7]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[172] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[8]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[173] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Number_Count[9]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[174] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[0]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[175] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[10]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[176] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[11]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[177] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[12]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[178] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[13]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[179] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[14]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[180] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[15]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[181] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[16]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[182] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[17]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[183] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[18]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[184] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[19]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[185] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[1]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[186] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[20]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[187] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[21]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[188] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[22]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[189] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[23]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[190] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[24]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[191] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[25]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[192] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[26]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[193] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[27]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[194] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[28]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[195] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[29]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[196] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[2]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[197] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[30]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[198] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[31]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[199] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[3]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[200] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[4]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[201] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[5]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[202] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[6]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[203] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[7]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[204] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[8]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[205] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Right_Reg_Data[9]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[206] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[0]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[207] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[10]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[208] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[11]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[209] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[12]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[210] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[13]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[211] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[14]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[212] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[15]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[213] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[16]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[214] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[17]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[215] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[18]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[216] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[1]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[217] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[2]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[218] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[3]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[219] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[4]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[220] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[5]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[221] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[6]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[222] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[7]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[223] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[8]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[224] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Size_Count[9]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[225] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[0]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[226] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[10]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[227] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[11]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[228] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[12]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[229] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[13]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[230] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[14]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[231] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[15]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[232] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[16]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[233] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[17]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[234] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[18]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[235] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[19]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[236] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[1]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[237] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[20]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[238] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[21]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[239] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[22]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[240] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[23]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[241] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[24]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[242] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[25]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[243] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[26]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[244] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[27]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[245] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[28]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[246] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[29]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[247] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[2]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[248] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[30]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[249] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[31]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[250] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[32]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[251] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[33]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[252] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[34]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[253] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[35]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[254] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[36]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[255] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[37]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[256] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[38]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[257] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[39]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[258] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[3]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[259] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[40]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[260] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[41]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[261] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[42]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[262] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[43]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[263] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[44]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[264] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[45]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[265] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[46]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[266] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[47]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[267] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[48]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[268] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[49]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[269] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[4]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[270] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[50]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[271] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[51]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[272] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[52]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[273] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[53]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[274] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[54]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[275] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[55]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[276] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[56]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[277] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[57]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[278] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[58]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[279] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[59]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[280] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[5]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[281] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[60]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[282] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[61]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[283] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[62]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[284] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[63]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[285] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[6]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[286] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[7]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[287] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[8]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[288] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|Sum_Reg[9]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[289] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|done" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[290] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|read" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[291] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|write" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[292] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[0]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[293] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[10]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[294] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[11]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[295] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[12]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[296] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[13]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[297] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[14]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[298] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[15]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[299] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[16]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[300] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[17]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[301] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[18]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[302] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[19]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[303] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[1]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[304] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[20]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[305] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[21]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[306] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[22]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[307] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[23]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[308] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[24]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[309] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[25]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[310] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[26]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[311] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[27]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[312] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[28]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[313] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[29]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[314] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[2]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[315] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[30]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[316] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[31]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[317] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[3]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[318] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[4]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[319] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[5]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[320] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[6]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[321] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[7]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[322] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[8]" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[323] -to "nios_system:NiosII|accelerator:avrage_hardware_0|AVM_AVALONMASTER_MAGNITUDE:AVM_AVALONMASTER_MAGNITUDE_INST|writedata[9]" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=324" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=324" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334528" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=993" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=128" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=53244" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=15453" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=128" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_0
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_FILE "C:/Users/ssa/Desktop/FPGA_Lab4_Temp3/stp2_auto_stripped.stp"

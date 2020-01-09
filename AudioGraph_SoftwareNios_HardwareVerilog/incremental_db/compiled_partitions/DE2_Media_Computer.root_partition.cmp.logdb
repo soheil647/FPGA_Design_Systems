@@ -1,0 +1,2 @@
+v1
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,nios_system:NiosII|fpoint_wrapper:cpu_fpoint|fpoint_hw_qsys:fpoint_instance|fpoint_hw_qsys_mult_single:the_fp_mult|lpm_mult:man_product2_mult|mult_5ft:auto_generated|mac_mult5,

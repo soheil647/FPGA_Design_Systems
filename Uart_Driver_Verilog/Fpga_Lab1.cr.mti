@@ -1,0 +1,29 @@
+C:/Users/ssa/Desktop/Fpga_Lab1/TestTransmiter.v {1 {vlog -work work -vopt -stats=none {C:\Users\ssa\Desktop\Fpga_Lab1\TestTransmiter.v}
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestTransmit
+
+Top level modules:
+	TestTransmit
+
+} {} {}} C:/Users/ssa/Desktop/Lab1Codes/BaudTickGen.v {1 {vlog -work work -vopt -stats=none C:/Users/ssa/Desktop/Lab1Codes/BaudTickGen.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module BaudTickGen
+
+Top level modules:
+	BaudTickGen
+
+} {} {}} C:/Users/ssa/Desktop/Lab1Codes/async_receiver.v {1 {vlog -work work -vopt -stats=none C:/Users/ssa/Desktop/Lab1Codes/async_receiver.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module async_receiver
+
+Top level modules:
+	async_receiver
+
+} {} {}} C:/Users/ssa/Desktop/Lab1Codes/async_transmitter.v {1 {vlog -work work -vopt -stats=none {C:\Users\ssa\Desktop\Lab1Codes\async_transmitter.v}
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module async_transmitter
+
+Top level modules:
+	async_transmitter
+
+} {} {}}
