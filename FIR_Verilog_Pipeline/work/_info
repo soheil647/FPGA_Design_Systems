@@ -1,0 +1,242 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Document\FPGA\CA\one
+vADD
+Z1 !s100 1Z>zde`fP8<U9=7Vljlf@0
+Z2 Iz]cMKho7DjzPlP46zDYTd2
+Z3 V25QUcSQ3VdniZLXI[2D^R3
+Z4 dD:\Document\FPGA\CA\one\CA_810194372
+Z5 w1539845049
+Z6 8D:/Document/FPGA/CA/one/CA_810194372/Adder.v
+Z7 FD:/Document/FPGA/CA/one/CA_810194372/Adder.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|D:/Document/FPGA/CA/one/CA_810194372/Adder.v|
+Z10 o-work work -O0
+Z11 n@a@d@d
+Z12 !s108 1541293026.323000
+Z13 !s107 D:/Document/FPGA/CA/one/CA_810194372/Adder.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcoeff_rom
+Z14 I^jNGdQPZNR4zWPIe?Yal=3
+Z15 V9^9UZXRO3PW:95U6<Jjon2
+R4
+Z16 w1541329609
+Z17 8D:/Document/FPGA/CA/one/CA_810194372/coeff_rom_bb.v
+Z18 FD:/Document/FPGA/CA/one/CA_810194372/coeff_rom_bb.v
+L0 34
+R8
+r1
+31
+R10
+Z19 !s100 hdLM`UP;ZTRXa89m=c?zk2
+Z20 !s108 1541292268.193000
+Z21 !s107 D:/Document/FPGA/CA/one/CA_810194372/coeff_rom_bb.v|
+Z22 !s90 -reportprogress|300|-work|work|D:/Document/FPGA/CA/one/CA_810194372/coeff_rom_bb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCounter
+Z23 !s100 i_Id>_^[X]k8dk_5k:H4V1
+Z24 ISRmH88m12:KP2`4b?ShA]2
+Z25 VbG:cnh_6z<nK<13m9Z<QX0
+R4
+Z26 w1539709491
+Z27 8D:/Document/FPGA/CA/one/CA_810194372/Counter.v
+Z28 FD:/Document/FPGA/CA/one/CA_810194372/Counter.v
+L0 1
+R8
+r1
+31
+Z29 !s90 -reportprogress|300|-work|work|D:/Document/FPGA/CA/one/CA_810194372/Counter.v|
+R10
+Z30 n@counter
+Z31 !s108 1541293026.547000
+Z32 !s107 D:/Document/FPGA/CA/one/CA_810194372/Counter.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCU
+Z33 !s100 j^6=9jQi33nE^_<46iekO1
+Z34 InJzjXTQ_NgA`]`PRgNK?_1
+Z35 Vh:8QE`0I5DbkD>dQ24MEI3
+R4
+Z36 w1539720174
+Z37 8D:/Document/FPGA/CA/one/CA_810194372/Cu.v
+Z38 FD:/Document/FPGA/CA/one/CA_810194372/Cu.v
+L0 1
+R8
+r1
+31
+Z39 !s90 -reportprogress|300|-work|work|D:/Document/FPGA/CA/one/CA_810194372/Cu.v|
+R10
+n@c@u
+Z40 !s108 1541293026.749000
+Z41 !s107 D:/Document/FPGA/CA/one/CA_810194372/Cu.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdp
+Z42 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z43 !s100 34:1BPT>X;GU@D5D`M;N:0
+Z44 IQ2EM5ZSEa[PHOdzJFWcc[2
+Z45 VQV];j9b9b?lUgz5Qgo8<V3
+Z46 !s105 DataPath_v_unit
+S1
+R4
+Z47 w1541292145
+Z48 8D:/Document/FPGA/CA/one/CA_810194372/DataPath.v
+Z49 FD:/Document/FPGA/CA/one/CA_810194372/DataPath.v
+L0 1
+R8
+r1
+31
+Z50 !s90 -reportprogress|300|-work|work|-sv|D:/Document/FPGA/CA/one/CA_810194372/DataPath.v|
+Z51 o-work work -sv -O0
+Z52 !s108 1541293026.964000
+Z53 !s107 D:/Document/FPGA/CA/one/CA_810194372/DataPath.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vFILTER
+Z54 !s100 Ln<G[7ZL3Boh;6i3b0IYi0
+Z55 Igi;T?jl01Uhj>ViJjRcmn3
+Z56 V6E[W;9Vg3JoT2YZ^87]Z33
+R4
+Z57 w1540045168
+Z58 8D:/Document/FPGA/CA/one/CA_810194372/FILTER.v
+Z59 FD:/Document/FPGA/CA/one/CA_810194372/FILTER.v
+L0 1
+R8
+r1
+31
+Z60 !s90 -reportprogress|300|-work|work|D:/Document/FPGA/CA/one/CA_810194372/FILTER.v|
+R10
+Z61 n@f@i@l@t@e@r
+Z62 !s108 1541293027.151000
+Z63 !s107 D:/Document/FPGA/CA/one/CA_810194372/FILTER.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmemory
+Z64 !s100 Z`D4nM`ATLO<W_bOF=C5e3
+Z65 IMWAQhOl[enN^a^7RiA;Y82
+Z66 Vjo]>9RPX;h@cbONDPIIK>1
+R4
+Z67 w1539845029
+Z68 8D:/Document/FPGA/CA/one/CA_810194372/Ram.v
+Z69 FD:/Document/FPGA/CA/one/CA_810194372/Ram.v
+L0 1
+R8
+r1
+31
+Z70 !s90 -reportprogress|300|-work|work|D:/Document/FPGA/CA/one/CA_810194372/Ram.v|
+R10
+Z71 !s108 1541293027.503000
+Z72 !s107 D:/Document/FPGA/CA/one/CA_810194372/Ram.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMultiplier
+Z73 !s100 Ho0oY3Th_X]PFF;eYNDV<2
+Z74 Im@Io:^:n3eO<m:EM;Fdod1
+Z75 VRKi8zF8RRcnYlVTo]g_FQ0
+R4
+Z76 w1539845088
+Z77 8D:/Document/FPGA/CA/one/CA_810194372/Multiplier.v
+Z78 FD:/Document/FPGA/CA/one/CA_810194372/Multiplier.v
+L0 1
+R8
+r1
+31
+Z79 !s90 -reportprogress|300|-work|work|D:/Document/FPGA/CA/one/CA_810194372/Multiplier.v|
+R10
+Z80 n@multiplier
+Z81 !s108 1541293027.329000
+Z82 !s107 D:/Document/FPGA/CA/one/CA_810194372/Multiplier.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vregister
+Z83 !s100 ]KL?KYGz6ccz2SZ_?IU=10
+Z84 IUD?:fRe953m6_7VM?cc<d1
+Z85 VG2kQNd[DI;z=m9giQ^m502
+R4
+Z86 w1539845071
+Z87 8D:/Document/FPGA/CA/one/CA_810194372/Register.v
+Z88 FD:/Document/FPGA/CA/one/CA_810194372/Register.v
+L0 1
+R8
+r1
+31
+Z89 !s90 -reportprogress|300|-work|work|D:/Document/FPGA/CA/one/CA_810194372/Register.v|
+R10
+Z90 !s108 1541293027.638000
+Z91 !s107 D:/Document/FPGA/CA/one/CA_810194372/Register.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vrom
+Z92 !s100 JfkWH=<2E<dXXe:M2:;bc1
+Z93 IWQZddYld=YGF@0V:e9=;o0
+Z94 VALIiPT@GU2dYd1lLZ403E2
+R4
+Z95 w1539845060
+Z96 8D:/Document/FPGA/CA/one/CA_810194372/rom.v
+Z97 FD:/Document/FPGA/CA/one/CA_810194372/rom.v
+L0 1
+R8
+r1
+31
+Z98 !s90 -reportprogress|300|-work|work|D:/Document/FPGA/CA/one/CA_810194372/rom.v|
+R10
+Z99 !s108 1541293027.770000
+Z100 !s107 D:/Document/FPGA/CA/one/CA_810194372/rom.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vROOOM
+!i10b 1
+!s100 P[Y9f7anlR4ci@[5WbR_R1
+IN2?_z6e<?giB@Z@iBZ[>b3
+Z101 VUZ7NzDk_ac_Pf:Y4fN<@;2
+R4
+Z102 w1541291999
+8D:/Document/FPGA/CA/one/CA_810194372/ROOOM_bb.v
+FD:/Document/FPGA/CA/one/CA_810194372/ROOOM_bb.v
+L0 34
+R8
+r1
+!s85 0
+31
+!s108 1541293028.406000
+!s107 D:/Document/FPGA/CA/one/CA_810194372/ROOOM_bb.v|
+!s90 -reportprogress|300|-work|work|D:/Document/FPGA/CA/one/CA_810194372/ROOOM_bb.v|
+!s101 -O0
+R10
+Z103 n@r@o@o@o@m
+vtb
+Z104 !s100 >d?CV97N>KDWMf?n7G@ib3
+Z105 IKQ]UTVA<X8N;b1ZkGZ[Zm3
+Z106 VIA5RQSJom5WHaJUDj?aaa3
+R4
+Z107 w1541290058
+Z108 8D:/Document/FPGA/CA/one/CA_810194372/tb .v
+Z109 FD:/Document/FPGA/CA/one/CA_810194372/tb .v
+L0 1
+R8
+r1
+31
+Z110 !s90 -reportprogress|300|-work|work|D:/Document/FPGA/CA/one/CA_810194372/tb .v|
+R10
+Z111 !s108 1541293027.921000
+Z112 !s107 D:/Document/FPGA/CA/one/CA_810194372/tb .v|
+!i10b 1
+!s85 0
+!s101 -O0
